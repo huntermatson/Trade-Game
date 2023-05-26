@@ -1471,8 +1471,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 (if:$Contract is &quot;Account&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 230)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Fundraising&quot;)]
 
-(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">&lt;!--(set:$Customs to &quot;Training&quot;) (set:$Registration to &quot;NoRegistration&quot;)(set:$Marketing to &quot;TPA&quot;)(set:$Standards to &quot;Implement&quot;)--&gt;
-{(if:$Time is not 0)[All your pre-export preparations are complete. In- total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]
+(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">{(if:$Time is not 0)[All your pre-export preparations are complete. In- total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]
 (if:$Time is 0)[All your pre-export preparations are complete. Your export readiness activities did not take any time.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]}
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
 For the customs option, you selected: (if:$Customs is &quot;Training&quot;)[(text-colour:red)[&#39;&#39;Undertake training on customs and border procedures.&#39;&#39;]
@@ -1480,46 +1479,48 @@ For the customs option, you selected: (if:$Customs is &quot;Training&quot;)[(tex
 &#39;&#39;]](if:$Customs is &quot;Research&quot;)[(text-colour:red)[&#39;&#39;Independently research customs and border procedures on the internet.&#39;&#39;
 ]]\
 
-Undertaking training on customs and border procedures is a good move as it helps you navigate the complexities of international trade and required documents.
+Undertaking training on customs and border procedures is a good decision as it can help you navigate the complexities of international trade and its required documents.
 
-Hiring a customs broker to handle customs procedures is a good move because it saves time, reduces risk of errors, and ensures compliance with regulations.
+Hiring a customs broker to handle customs procedures is a good decision because it can save time, reduce risk of errors, and ensure compliance with regulations.
 
-Conducting independent research can be a cost-effective method for finding information about customs procedures. However, the procedure can be complicated without any help. While there is no harm to selecting this option, you alone are responsible for demonstrating customs compliance.
+Conducting independent research can be a cost-effective method for finding information about customs procedures. However, the procedure can be complicated without any help. While there is no harm in selecting this option, you alone are responsible for demonstrating customs compliance.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Voluntary Standards]\
-For the voluntary standard options, you selected: (if:$Standards is &quot;Implement&quot;)[(text-colour:red)[&#39;&#39;Research and implement voluntary standards.&#39;&#39;]
+For the voluntary sustainability standards option, you selected: (if:$Standards is &quot;Implement&quot;)[(text-colour:red)[&#39;&#39;Research and implement voluntary sustainability standards.&#39;&#39;]
 ](if:$Standards is &quot;Packaging&quot;)[(text-colour:red)[&#39;&#39;Package your product in 100% recycled materials.
 &#39;&#39;]](if:$Standards is &quot;NoStandard&quot;)[(text-colour:red)[&#39;&#39;Not implement voluntary standards.&#39;&#39;
 ]]\
 
 Implementing voluntary sustainability standards is a good choice since it can provide access to new markets, increase export opportunities, and enhance competitiveness.
 
-Packaging product in recycled materials may or may not increase profits. The effectiveness depends on the level of adoption to the concept of sustainability.
+Packaging your product in recycled materials may or may not increase profits. The effectiveness depends on the level of demand in the destination market and the extent to which it has adopted sustainable practices.
 
-Not implementing voluntary standards will not stop you from exporting , but your products may have less market competiveness in certain countries.
+Not implementing voluntary standards will not stop you from exporting, but your products may have less market competitiveness in certain countries.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Business Registration]\
-For the business registration options, you selected: (if:$Registration is &quot;Local&quot;)[(text-colour:red)[&#39;&#39;Register with your national government.&#39;&#39;]
+For the business registration option, you selected: (if:$Registration is &quot;Local&quot;)[(text-colour:red)[&#39;&#39;Register with a national government.&#39;&#39;]
 ](if:$Registration is &quot;NoRegistration&quot;)[(text-colour:red)[&#39;&#39;Do not register with any organization.&#39;&#39;
 ]](if:$Registration is &quot;LEI&quot;)[(text-colour:red)[&#39;&#39;Obtain a global business registration.&#39;&#39;]]\
 
-Registering your business with the national government allows you to obtain the necessary licenses and permits required. 
+Registering your business with a national government is a good option. It allows you to obtain the necessary licenses and permits required and provides certain legal assurances for your business.
 
-Obtaining a global business registration-Legal Entity Identifier (LEI) is the best option. You can gain international recognition and credibility with investors, customers, and other stakeholders that need LEI data to optimize business procedures for market transactions.
+Obtaining a global business registration is a good option. You can gain international recognition and credibility with investors, customers, and other stakeholders that need Legal Entity Identifer (LEI) data to optimize business procedures for market transactions.
 
 Not registering your business can have several disadvantages, such as legal penalties, difficulties in obtaining loans and credit, limitations on business activities, and lack of credibility with customers and suppliers.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Marketing]\
-For the marketing options, you selected: (if:$Marketing is &quot;TPA&quot;)[(text-colour:red)[&#39;&#39;Contact your trade promotion agency.&#39;&#39;]
+For the marketing option, you selected: (if:$Marketing is &quot;TPA&quot;)[(text-colour:red)[&#39;&#39;Contact your trade promotion agency.&#39;&#39;]
 ](if:$Marketing is &quot;Website&quot;)[(text-colour:red)[&#39;&#39;Create your own website.
 &#39;&#39;]](if:$Marketing is &quot;eCommerce&quot;)[(text-colour:red)[&#39;&#39;Join an eCommerce marketplace.&#39;&#39;
 ]]\
 
-The trade promotion agency conducts export promotion activities by providing information, linkages, technical advice, marketing and policy advocacy for enterprise to help you find customers faster.
+All three marketing options are good options, however the optimal option depends on your specific circumstances.
 
-E-commerce can promote online sales and find more customers. You can use the e-commerce readiness assessment tool to evaluate business capabilities to engage in e-commerce activities and sell online. But it can be costly to use a third-party platform.
+Trade promotion agencies often have representatives in-country and can provide in-depth knowledge of the local market and import procedures that may not be available through other sources. 
 
-A well-designed business website can attract potential customers and provide them with important information such as product features, pricing, and shipping information.
+E-commerce platforms can increase online sales by finding customers in markets you had not originally intended to market to.  However, some e-commerce platforms charge high commission fees to sellers to use the platform.
+
+A well-designed business website can attract potential customers and provide them with important information such as product features, pricing, and shipping information. However, setting up a useable website requires technical skills, including optimizing your website so that it appears in search results and can be found by potential customers.
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Ready to Export&#39;)]}</tw-passagedata><tw-passagedata pid="18" name="Fundraising" tags="2-Point-of-Export Finance" position="1100,550" size="100,100">(set: num-type _Cost1 to 0)(set:_Cost2 to &quot;5%&quot;)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 0)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 1)(set: $InterestRate to 14)(if:$Contract is &quot;Letter&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[
@@ -2091,7 +2092,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 (if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]
 (if:$ExportCountry is &quot;Kujuma&quot;)+(if:$HSWrong &gt; 2 )[(set: $HSReSelect to (confirm: &quot;Would you like to spend $10 to consult your HS code?&quot;, &quot;No&quot;, &quot;Yes&quot;))(if: $HSReSelect is true)[(go-to:&quot;HSCodeSecondChance&quot;)]]
 (if:$ExportCountry is &quot;Sarvahara&quot;)+(if:$HSWrong &gt; 2 )[(set: $HSReSelect to (confirm: &quot;Would you like to spend $50 to consult your HS code?&quot;, &quot;No&quot;, &quot;Yes&quot;))(if: $HSReSelect is true)[(go-to:&quot;HSCodeSecondChance&quot;)]]
-(if:$ExportCountry is &quot;Luminaria&quot;)+(if:$HSWrong &gt; 2 )[(set: $HSReSelect to (confirm: &quot;Would you like to spend $500 to consult your HS code?&quot;, &quot;No&quot;, &quot;Yes&quot;))(if: $HSReSelect is true)[(go-to:&quot;HSCodeSecondChance&quot;)]]}</tw-passagedata><tw-passagedata pid="22" name="HSCodeLookup" tags="2-Point-of-Export HSCode" position="1100,775" size="100,100">{(if:$HS is &quot;HSknow&quot;)[(goto: &quot;HSCodeVerification&quot;)]
+(if:$ExportCountry is &quot;Luminaria&quot;)+(if:$HSWrong &gt; 2 )[(set: $HSReSelect to (confirm: &quot;Would you like to spend $500 to consult your HS code?&quot;, &quot;No&quot;, &quot;Yes&quot;))(if: $HSReSelect is true)[(go-to:&quot;HSCodeSecondChance&quot;)]]}</tw-passagedata><tw-passagedata pid="22" name="HSCodeLookup" tags="2-Point-of-Export HSCode" position="1325,800" size="100,100">{(if:$HS is &quot;HSknow&quot;)[(goto: &quot;HSCodeVerification&quot;)]
 (if:$HS is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto:  &quot;HSCodeIntro&quot;)]
 (if:$Product is &quot;Cashew Nuts&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your customers may need to $SelectButtonFormat[shell your product] before eating it.
 
@@ -2149,15 +2150,19 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if: $HSCode is _HScode)[(go-to:&quot;Correct&quot;)
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I register my business?]\
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Should I register my business?]\
 
-&#39;&#39;Global registration :&#39;&#39; Normally choosing the global registration means getting a Legal Entity Identifier (LEI). An LEI is a 20-character, alphanumeric code that provides a clear and unique identification to businesses and other entities participating in financial transactions.  Although an LEI is not a legal requirement, there are several benefits that your business can get from an LEI. You can gain international recognition and credibility with investors, customers, and other stakeholders that need LEI data to optimize business procedures for market transactions.
+Ideas turn into businesses every day. Initially, many of these businesses are unregistered, meaning that they operate informally and therefore have not gained formal recognition from a government authority or internationally recognized organization. At some point, many businesses opt to seek formal registration as it provides comprehensive legal recognition and protection for your business.
 
-&#39;&#39;National registration :&#39;&#39; Registering your business with the national government typically provides more comprehensive legal recognition and protection for your business. It also allows you to obtain the necessary licenses and permits required for your specific industry, and makes it easier to access government services and support. 
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here are the options you have for business registration:]\
 
-&#39;&#39;No registration :&#39;&#39; Not registering your business can have several disadvantages, such as legal penalties, difficulties in obtaining loans and credit, limitations on business activities, and lack of credibility with customers and suppliers.
+&#39;&#39;Global registration :&#39;&#39; Normally choosing a global registration means getting a Legal Entity Identifier (LEI). An LEI is a 20-character, alphanumeric code that provides a clear and unique identification to businesses and other entities participating in financial transactions.  Although an LEI is not a legal requirement, there are several benefits that your business can get from an LEI. You can gain international recognition and credibility with investors, customers, and other stakeholders.
 
-(If you are exporting to Sarvarhara, registration is a must!)
+&#39;&#39;National registration :&#39;&#39; Registering your business with a national government allows you to obtain the necessary licenses and permits required for your specific industry, and makes it easier to access government services and support. 
+
+&#39;&#39;No registration :&#39;&#39; Although it is not a legal requirement to register your business, opting not to do so can have several disadvantages. Some examples include legal penalties, difficulties in obtaining loans and credit, limitations on business activities, and lack of credibility with customers and suppliers.
+
+NOTE: If you are exporting to Sarvarhara, registration is a must!
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a conveyance method?]\
@@ -2178,7 +2183,7 @@ Some common methods of transportation include ocean freight, air freight, road f
 In reality, you may use &#39;&#39; &lt;a href=&quot;https://learning.intracen.org/course/info.php?id=277&quot; target=&quot;_blank&quot;&gt; ITC Introduction to International Transport and Logistics&lt;/a&gt;&#39;&#39;  to take an online course that introduces small and medium enterprises (SMEs) to the basic transport and logistical requirements of export operations, including cross-border sea freight, air freight and packaging procedures.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Country Selection Help]\
+(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
 You may consider some of the following factors when choosing your country of export:
 0. &#39;&#39;Geo-economic factors:&#39;&#39; Consider the location, level of development, and political aspects of the economy.
 0. &#39;&#39;Business environment: &#39;&#39;Evaluate the business environment of the country you are considering. Think about factors such as ease of doing business and legal frameworks.
@@ -2208,15 +2213,13 @@ When the product has arrived at the destination, there are several options to de
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
 
-&#39;&#39;Hire a customs broker :&#39;&#39; Customs brokers and clearing agents are specialists on customs rules and procedures. They can help ensure import documents are correct and may assist with forwarding arrangements.  In some economies, it is compulsory when an import value is above a certain threshold to use a licensed customs agent to clear goods through customs. In others, businesses simply choose to hire a customs broker to help avoid potentially costly errors.To find a licensed customs broker, a first step is to search the national customs agency where the import will take place, as they frequently list registered brokers that can be contacted.
+&#39;&#39;Hire a customs broker :&#39;&#39; Customs brokers and clearing agents are specialists on customs rules and procedures. They can help ensure import documents are correct and may assist with forwarding arrangements.  In some economies, it is compulsory when an import value is above a certain threshold to use a licensed customs agent to clear goods through customs. In others, businesses simply choose to hire a customs broker to help avoid potentially costly errors. To find a licensed customs broker, start by searching the national customs agency where the import will take place, as they frequently list registered brokers that can be contacted.
 
 &#39;&#39;Undertake training :&#39;&#39; Various institutions have online resources and training materials that can help you learn more about technical terms and border procedures managed by customs. Some examples are:
-0. Glossary of international customs terms: The World Customs Organization has a glossary with descriptions on key terms used by customs authorities. 
-0. E-learning courses on customs: The European Commission offers about 600 e-learning courses in 21 languages about customs and border procedures. Most of the materials are free to access. 
-0. Factsheet on customs procedures and declarations: The European Union Customs Code (UCC) provides a general guide with steps that you can consider for complying with procedures required by customs authorities. 
-
-&#39;&#39;Self-research :  &#39;&#39;You need to look up for information on customs authorities, enquiry points for relevant government authorities, border procedures involved in exports, imports, and transit of goods and fill out export compliance documents. The procedure can be complicated without any help.
-In reality, you may use &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;  to find out detailed information about imports, market dynamics, tariffs, access requirements, potential buyers and more.
+0. World Customs Organization (WCO): The WCO&#39;s &#39;&#39; &lt;a href=&quot;https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/facilitation/instruments-and-tools/tools/glossary-of-international-customs-terms/glossary-of-international-customs-terms.pdf?db=web&quot; target=&quot;_blank&quot;&gt; Glossary of international customs terms&lt;/a&gt;&#39;&#39; has descriptions of key terms used by customs authorities. 
+0. European Commission (EC): The EC&#39;s &#39;&#39; &lt;a href=&quot;https://taxation-customs.ec.europa.eu/taxation-1/eu-training/elearning-courses-and-ebooks_en&quot; target=&quot;_blank&quot;&gt; eLearning courses in Customs and Taxation&lt;/a&gt;&#39;&#39; offers more than 600 e-learning courses in 21 languages about customs and border procedures. Most of the materials are free to access. 
+0. European Union Customs Code (UCC): The UCC&#39;s &#39;&#39; &lt;a href=&quot;https://ec.europa.eu/taxation_customs/system/files/2019-03/01_taxud_ucc_customs_procedures_and_customs_declarations_quick_info_en.pdf&quot; target=&quot;_blank&quot;&gt; Factsheet on customs procedures and declarations&lt;/a&gt;&#39;&#39; provides a general guide with steps that you can consider for complying with procedures required by customs authorities. 
+&#39;&#39;Independent research :  &#39;&#39;To be successful in your export journey, it can be helpful to be familiar with customs authorities, enquiry points for relevant government agencies, and border procedures in the import and export locations. You may find many of these details online or available from other sources. A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
@@ -2265,30 +2268,33 @@ Marine cargo insurance, which protects the shipment of merchandise via a cargo v
 &#39;&#39;Letters of credt&#39;&#39; involve intermediary banks to guarantee you will receive payment from your customer promptly, but comes with added costs. 
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose my market?]\
+(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
+To choose a market for your product, it&#39;s important to conduct market research and analysis. This can include gathering data on consumer preferences, market trends, and potential competitors. You can also consider hiring a local agent or distributor who can help you navigate the market and provide insights on cultural and regulatory differences.
 
-To determine a market for your product, it&#39;s important to conduct market research and analysis. This can include gathering data on consumer preferences, market trends, and potential competitors. You can also consider hiring a local agent or distributor who can help you navigate the market and provide insights on cultural and regulatory differences.
-In reality, you may also use &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export opportunities find out export potential.
+One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
 
 In terms of regulations, it&#39;s important to research the specific regulations and standards in the target market. This can include product safety, labeling requirements, and any required certifications or permits. You can work with government agencies or industry associations to ensure compliance with regulations in the target market.
-In reality, you may also use &#39;&#39; &lt;a href=&quot;https://m.macmap.org/&quot; target=&quot;_blank&quot;&gt;Market Access Map&lt;/a&gt;&#39;&#39; to identify customs tariffs, tariff rate quotas, trade remedies, regulatory requirements and preferential regimes applicable to your product.
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is a brief biography for different markets:]\
+One tool you may use is the &#39;&#39; &lt;a href=&quot;https://m.macmap.org/&quot; target=&quot;_blank&quot;&gt;Market Access Map&lt;/a&gt;&#39;&#39; to identify customs tariffs, tariff rate quotas, trade remedies, regulatory requirements and preferential regimes applicable to your product.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is a brief description of each market:]\
 * &#39;&#39;Kujuma&#39;&#39; has a free trade agreement (FTA) in place with both countries so your exports of $Product can enter duty-free, but it charges a VAT for all imported products. 
 * &#39;&#39;Sarvahara&#39;&#39; has no regulatory restrictions for imported textile product, but it has a mandatory 7-day quarantine policy for imported food products and bans any food products from unregistered businesses.
 * &#39;&#39;Luminaria&#39;&#39; has a well-regulated business environment and more food safety regulations regarding food products. For example, it has an import prohibition rule for agricultural products from Kujuma. Also, there are more mandatory documents to fill out if an exporter wants to get the product across the border.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Market Selection&#39;)]</tw-passagedata><tw-passagedata pid="35" name="Help Marketing" tags="Help" position="550,1000" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I market my product?]\
+Depending on what type of product you are selling and your potential customer type, you may opt for different marketing strategies. For example, if your product is consumer ready and you are selling directly to consumers, this is known as a Business-to-Consumer (B2C) transaction. If your product is an input to produce something else, you may be selling to another business. This is know as a Business-to-Business (B2B) transaction.  B2C sales often occur online and therefore you may opt for a digital marketing strategy to spread the word about your product. B2B sales are often initiated through referrals or as a result of an in-person interaction such as a trade fair.
 
-&#39;&#39;Trade promotion agency (TPA):&#39;&#39;A TPA conducts export promotion activities by providing information, linkages, technical advice, marketing and policy advocacy for enterprises. These useful infomation can help you find customers faster.
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here are your options for your marketing strategy:]\
+&#39;&#39;Trade promotion agency (TPA):&#39;&#39; A TPA conducts export promotion activities by providing information, linkages, technical advice, marketing and policy advocacy for enterprises which can help you connect directly with customers faster. This is a good option for B2B transactions.
 
-&#39;&#39;E-commerce:&#39;&#39;E-commerce can promote online sales and find more customers. You can use the e-commerce readiness assessment tool to evaluate business capabilities to engage in e-commerce activities and sell online. But it can be costly to use a third-party platform.
+&#39;&#39;E-commerce:&#39;&#39; E-commerce can promote online sales and help find more customers. You can use the  &#39;&#39; &lt;a href=&quot;https://tools.ecomconnect.org/readiness/&quot; target=&quot;_blank&quot;&gt;e-commerce readiness assessment&lt;/a&gt;&#39;&#39; tool to evaluate business capabilities to engage in e-commerce activities and sell online. But it can be costly to use a third-party platform.
 
-&#39;&#39;Business website:&#39;&#39;Business website provides an online platform for businesses to showcase their products or services, communicate with customers, and establish their brand image. A well-designed and informative website can attract potential customers and provide them with important information such as product features, pricing, and shipping information.
+&#39;&#39;Business website:&#39;&#39; Having a website provides an online platform for businesses to showcase their products or services, communicate with customers, and establish their brand image. A well-designed and informative website can attract potential customers and provide them with important information such as product features, pricing, and shipping information.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose my product?]\
+(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose which product to export?]\
 The choice of the product to export depends on factors such as demand in international markets, production capacity, and regulatory requirements. It&#39;s important to conduct thorough market research and assess the competitiveness of a chosen product before embarking on an export venture.
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
@@ -2311,21 +2317,22 @@ If you are planning to export &#39;&#39;textile &amp; apparel products&#39;&#39;
 * &#39;&#39;Sarvahara&#39;&#39; is one of the largest rice exporters in the world, producing high-quality rice varieties such as white rice. Similarly, it is known for producing high-quality knitted baby hats due to its skilled workforce and favorable climate conditions for growing cotton.
 * &#39;&#39;Luminaria&#39;&#39; is a major wheat producer with a reputation for high-quality wheat that can be used for bread and pastry products. Additionally, Luminaria is well-known for its high-end sport shoes that are often associated with major international brands, making them attractive to customers in the international market who are willing to pay a premium price for quality footwear.
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary sustainability standards?]\
+(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary standards?]\
 
-Voluntary sustainability standards(VSS) involve guidelines, rules and requirements aiming to foster sustainability along global value chains by ensuring businesses use resources and processes that do not damage the environment and people. Some examples may include organic, fair trade, or sustainability standards.
-While the adoption of VSS can represent business costs, it can also lead to benefits in improving management and monitoring systems, productivity, and access to credit, which are relevant for expanding business operations and reaching new markets through participation in international trade. However, it is important to understand whether your market has a preference for VSS before implementing.
+Voluntary sustainability standards (VSS) involve guidelines, rules and requirements aiming to foster sustainability along global value chains by ensuring businesses use resources and processes that do not damage the environment and people. Some examples may include organic, fair trade, or energy star.
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is a description of preference for VSS in different countries:]\
-* &#39;&#39;Kujuma&#39;&#39; does not have a preference for voluntary sustainable standards since they are still new concepts. However, this does not mean that Kujuma disregards sustainable practices. As a responsible exporter, it is important to adhere to ethical and sustainable standards when conducting business in Kujuma, especially for companies that have a commitment to sustainability.
-* &#39;&#39;Sarvahara&#39;&#39; is just starting to become aware of the importance of sustainable standards in international trade. While there are no regulations mandating sustainable practices for exports, some businesses are starting to take the initiative to adopt sustainable practices voluntarily. 
-* &#39;&#39;Luminaria&#39;&#39; has shown a preference for voluntary sustainable standards in recent years. Many businesses and consumers in Luminaria have become increasingly aware of the environmental impact of the products they use and purchase. As a result, there has been a growing demand for products that meet certain sustainability criteria.
+While the adoption of VSS may incur costs, it can also lead to benefits in improving management and monitoring systems, productivity, and access to credit, which are relevant for expanding business operations and reaching new markets. 
 
+Globally, adoption and implementation of VSS is varied. It is important to understand whether customers in your destination market have a preference for VSS before implementing.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is an overview of demand for VSS in different destination countries:]\
+* &#39;&#39;Kujuma&#39;&#39; does not have a preference for voluntary sustainability standards as of yet. However, this does not mean that Kujuma disregards sustainability practices. As a responsible exporter, it is important to adhere to ethical and sustainable standards when conducting business in Kujuma, especially for companies that have a commitment to sustainability.
+* &#39;&#39;Sarvahara&#39;&#39; has a low but growing demand for sustainability standards in international trade. While there are no regulations mandating sustainable practices for exports, some businesses are starting to take the initiative to adopt them voluntarily. 
+* &#39;&#39;Luminaria&#39;&#39; has shown a preference for voluntary sustainable standards in recent years. Many businesses and consumers in Luminaria have become increasingly aware of the environmental impact of the products they use and purchase. As a result, there is a strong demand for products that meet certain sustainability criteria.
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is sustainable packaging?]\
+Sustainable packaging refers to packaging materials and methods that have minimal negative impact on the environment, and that are designed to be reused, recycled, or composted at the end of their life cycle. By using sustainable packaging, businesses can reduce their carbon footprint, minimize waste, and improve their environmental image, which can enhance their reputation and competitiveness in the global market. However, it is important to understand whether your market has a preference for such packaging before implementing. 
 
- Sustainable packaging refers to packaging materials and methods that have minimal negative impact on the environment, and that are designed to be reused, recycled, or composted at the end of their life cycle. By using sustainable packaging, businesses can reduce their carbon footprint, minimize waste, and improve their environmental image, which can enhance their reputation and competitiveness in the global market. However, it is important to understand whether your market has a preference for such packaging before implementing. 
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is a description of preference for packaging in different countries:]\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXXX==&quot;)+(text-style:&quot;bold&quot;)[Here is an overview of the demand for sustainable packaging in different destination countries:]\
 * &#39;&#39;Kujuma&#39;&#39; does not have a preference for sustainable packaging.
 * &#39;&#39;Sarvahara&#39;&#39; does not have a preference for sustainable packaging.
 * &#39;&#39;Luminaria&#39;&#39; has a preference for sustainable packaging.
@@ -2607,7 +2614,7 @@ th, td {
 (if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="43" name="Intro" tags="Intro/Outro" position="125,100" size="100,100">{(set:$NextButtonFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-color:white)+(b4r:&quot;solid&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #00204a))
 (set:$SelectButtonFormat to (text-style: &quot;bold&quot;)+(text-color:#B30900))
 (set:$HelpFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(css:&quot;padding: 0.1em;&quot;)+(text-color:white)+(corner-radius:12)+(background: #B30900))}
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[The Trade Game]\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[The Trade Game]\
 $NextButtonFormat[Start Now]\
 (click-goto:&quot;Start Now&quot;, &#39;Start&#39;)
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-style: &quot;bold&quot;)[Presented by :]\
@@ -3918,7 +3925,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Implement&quot;)
-[$SelectButtonFormat[&#39;&#39;Voluntary standards&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Voluntary sustainability standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Research and implement voluntary standards&quot;)[(set: $Standards to &quot;Implement&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -3990,7 +3997,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Implement&quot;)
-[$SelectButtonFormat[&#39;&#39;Voluntary standards&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Voluntary sustanability standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Research and implement voluntary standards&quot;)[(set: $Standards to &quot;Implement&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -4062,7 +4069,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Implement&quot;)
-[$SelectButtonFormat[&#39;&#39;Voluntary standards&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Voluntary sustainability standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Research and implement voluntary standards&quot;)[(set: $Standards to &quot;Implement&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
