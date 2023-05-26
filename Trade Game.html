@@ -1207,7 +1207,15 @@ Make sure to remember it or write it down.\
 
 [$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Courier&#39;)]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="14" name="Feedback" tags="Intro/Outro" position="1475,50" size="100,100">&lt;iframe width=&quot;98%&quot; height=&quot;700px&quot; src=&quot;https://forms.office.com/e/R549Z2ZjQA?embed=true&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; style=&quot;border: none; max-width:100%; max-height:100vh&quot; allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen&gt; &lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="15" name="Financial Instrument" tags="Contract" position="1100,375" size="100,100">(set: num-type _Cost1 to 4)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(if:$ExportCountry is &quot;Kujuma&quot;)[
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="14" name="Feedback" tags="Intro/Outro" position="1475,50" size="100,100">&lt;iframe width=&quot;98%&quot; height=&quot;700px&quot; src=&quot;https://forms.office.com/e/R549Z2ZjQA?embed=true&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; style=&quot;border: none; max-width:100%; max-height:100vh&quot; allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;!-- AddToAny BEGIN --&gt;
+&lt;div&gt;
+&lt;a href=&quot;https://www.addtoany.com/share#url=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;title=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/a2a.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;linkname=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/twitter.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;linkname=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/linkedin.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- AddToAny END --&gt;</tw-passagedata><tw-passagedata pid="15" name="Financial Instrument" tags="Contract" position="1100,375" size="100,100">(set: num-type _Cost1 to 4)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(if:$ExportCountry is &quot;Kujuma&quot;)[
 (append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
@@ -2006,19 +2014,7 @@ $NextButtonFormat[Next Step ]
 (if:$Registration is &quot;NoRegistration&quot;)+(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[Sarvahara require a business to register before exporting food! ]\
 
 $NextButtonFormat[Restart](click:&quot;Restart&quot;)[(restart:)]
-[$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]
-&lt;a class=&quot;twitter-share-button&quot;
-  href=&quot;https://twitter.com/intent/tweet?text=Check%20out%20this%20new%20trade%20game%20from%20@WTO%20and%20@IOExport%20https://game.trade4msmes.org/&quot;
- hashtags=&quot;tradegame&quot;&gt; 
-Loving the game? Share it! &lt;/a&gt;
-
-&lt;!-- AddToAny BEGIN --&gt;
-&lt;div&gt;
-&lt;a href=&quot;https://www.addtoany.com/share#url=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;title=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/a2a.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
-&lt;a href=&quot;https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;linkname=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/twitter.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
-&lt;a href=&quot;https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fgame.trade4msmes.org&amp;amp;linkname=&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://static.addtoany.com/buttons/linkedin.svg&quot; width=&quot;32&quot; height=&quot;32&quot; style=&quot;background-color:royalblue&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;!-- AddToAny END --&gt;</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
+[$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 ---
@@ -2611,7 +2607,7 @@ th, td {
 (if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="43" name="Intro" tags="Intro/Outro" position="125,100" size="100,100">{(set:$NextButtonFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-color:white)+(b4r:&quot;solid&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #00204a))
 (set:$SelectButtonFormat to (text-style: &quot;bold&quot;)+(text-color:#B30900))
 (set:$HelpFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(css:&quot;padding: 0.1em;&quot;)+(text-color:white)+(corner-radius:12)+(background: #B30900))}
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[Trade Game]\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[The Trade Game]\
 $NextButtonFormat[Start Now]\
 (click-goto:&quot;Start Now&quot;, &#39;Start&#39;)
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-style: &quot;bold&quot;)[Presented by :]\
