@@ -1135,7 +1135,7 @@ Make sure to remember it or write it down.\
 2.Commercial Invoice
 3.Packing List
 4.Labelling]\
-(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
+(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
 1.Bill of Lading
 2.Commercial Invoice
 3.Packing List]
@@ -1148,7 +1148,7 @@ Make sure to remember it or write it down.\
 6.Import Permit
 7.GMO-free certificate
 8.Labelling]\
-(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[
+(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[
 1.Bill of Lading
 2.Commercial Invoice
 3.Packing List]
@@ -2109,7 +2109,7 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if:$Product is &quot;Wheat&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your country produces high quality durum wheat. The seeds are often exported to another country and processed after being sold.
 
 Once you have found the correct 6-digit HS code, make sure to write it down.&quot;)]
-(if:$Product is &quot;Leather Footwear&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your company exports $SelectButtonFormat[sports] footwear, such as $SelectButtonFormat[tennis shoes, basketball shoes, gym shoes, and training shoes].
+(if:$Product is &quot;Sports Footwear&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your company exports $SelectButtonFormat[sports] footwear, such as $SelectButtonFormat[tennis shoes, basketball shoes, gym shoes, and training shoes].
 
 Once you have found the correct 6-digit HS code, make sure to write it down.&quot;)]}
 &lt;iframe src=&quot;https://globaltradehelpdesk.org/en/resources/search-hs-code&quot;  margin=&quot;0&quot; width=&quot;100%&quot; height=&quot;700&quot; style=&quot;border:none&quot; left=&quot;0&quot; top=&quot;0&quot;&gt;
@@ -2122,7 +2122,7 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if:$Product is &quot;Rice&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is &#39;&#39;100630&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Knitted Hats&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is  &#39;&#39;611120&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Wheat&quot;) [(set: $Funds to ($Funds - 500))(alert:&quot;Your HS code is &#39;&#39;100111&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
-(if:$Product is &quot;Leather Footwear&quot;)[(set: $Funds to ($Funds - 500))(alert:&quot;Your HS code is &#39;&#39;640411&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]</tw-passagedata><tw-passagedata pid="24" name="HSCodeVerification" tags="2-Point-of-Export" position="1100,850" size="100,100">(if:$Product is &quot;Cashew Nuts&quot;)[(set: $HSCode to (prompt: &quot;Please enter your 6 digit HS Code&quot;, &quot;&quot;))(set: _HScode to &quot;080131&quot;)(if: $HSCode is _HScode)[(go-to:&quot;Correct&quot;)
+(if:$Product is &quot;Sports Footwear&quot;)[(set: $Funds to ($Funds - 500))(alert:&quot;Your HS code is &#39;&#39;640411&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]</tw-passagedata><tw-passagedata pid="24" name="HSCodeVerification" tags="2-Point-of-Export" position="1100,850" size="100,100">(if:$Product is &quot;Cashew Nuts&quot;)[(set: $HSCode to (prompt: &quot;Please enter your 6 digit HS Code&quot;, &quot;&quot;))(set: _HScode to &quot;080131&quot;)(if: $HSCode is _HScode)[(go-to:&quot;Correct&quot;)
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
 
@@ -2146,7 +2146,7 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
 
-(if:$Product is &quot;Leather Footwear&quot;)[(set: $HSCode to (prompt: &quot;Please enter your 6 digit HS Code&quot;, &quot;&quot;))(set: _HScode to &quot;640411&quot;)
+(if:$Product is &quot;Sports Footwear&quot;)[(set: $HSCode to (prompt: &quot;Please enter your 6 digit HS Code&quot;, &quot;&quot;))(set: _HScode to &quot;640411&quot;)
 (if: $HSCode is _HScode)[(go-to:&quot;Correct&quot;)
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
@@ -2351,7 +2351,7 @@ Sustainable packaging refers to packaging materials and methods that have minima
 (else:)[(set: $Funds to ($Funds - 5))(set: $Time to ($Time + 1))(alert:&quot;Oh no! You have at least one document missing or wrong. Try Again.&quot;)(set:$DocWrong to $DocWrong+1)(goto: &quot;Mandatory Compliances&quot;)]]
 
 
-(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[(if: $Bill is true and $Commercial is true and $Packing is true  and $SPS is false and $Origin is false and $Export is false and $Import is false and $GMO is false and $Test is false and $Label is false)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)](else-if:$Customs is &quot;Broker&quot;)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)]
+(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[(if: $Bill is true and $Commercial is true and $Packing is true  and $SPS is false and $Origin is false and $Export is false and $Import is false and $GMO is false and $Test is false and $Label is false)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)](else-if:$Customs is &quot;Broker&quot;)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)]
 (else:)[(set: $Funds to ($Funds - 50))(set: $Time to ($Time + 1))(alert:&quot;Oh no! You have at least one document missing or wrong. Try Again.&quot;)(set:$DocWrong to $DocWrong+1)(goto: &quot;Mandatory Compliances&quot;)]]
 
 
@@ -2359,7 +2359,7 @@ Sustainable packaging refers to packaging materials and methods that have minima
 (else:)[(set: $Funds to ($Funds - 50))(set: $Time to ($Time + 1))(alert:&quot;Oh no! You have at least one document missing or wrong. Try Again.&quot;)(set:$DocWrong to $DocWrong+1)(goto: &quot;Mandatory Compliances&quot;)]]
 
 
-(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[(if: $Bill is true and $Commercial is true and $Packing is true and $SPS is false and $Origin is false and $Export is false and $Import is false and $GMO is false and $Test is false and $Label is false)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)](else-if:$Customs is &quot;Broker&quot;)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)]
+(if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[(if: $Bill is true and $Commercial is true and $Packing is true and $SPS is false and $Origin is false and $Export is false and $Import is false and $GMO is false and $Test is false and $Label is false)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)](else-if:$Customs is &quot;Broker&quot;)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)]
 (else:)[(set: $Funds to ($Funds - 50))(set: $Time to ($Time + 1))(alert:&quot;Oh no! You have at least one document missing or wrong. Try Again.&quot;)(set:$DocWrong to $DocWrong+1)(goto: &quot;Mandatory Compliances&quot;)]]
 
 (if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Wheat&quot; and $ImportCountry is &quot;Kujuma&quot;)[(if: $Bill is true and $Commercial is true and $Packing is true and $SPS is false and $Origin is false and $Export is false and $Import is false and $GMO is false and $Test is false and $Label is false)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)](else-if:$Customs is &quot;Broker&quot;)[(set: $Funds to ($Funds - 2500))(goto: &quot;Insurance Choice&quot;)]
@@ -2617,7 +2617,7 @@ th, td {
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[The Trade Game]\
 $NextButtonFormat[Start Now]\
 (click-goto:&quot;Start Now&quot;, &#39;Start&#39;)
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-style: &quot;bold&quot;)[Presented by :]\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-style: &quot;bold&quot;)[Presented by:]\
 |==
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[
 (text-color:white)[-]\
@@ -2709,7 +2709,7 @@ The customs broker that you hired previously has prepared the following mandator
 
 The administrative fees to file these documents cost $50 which will be deducted from your funds.
 ]\
-(if:$Customs is &quot;Broker&quot; and $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[You&#39;re nearly ready to export your product!
+(if:$Customs is &quot;Broker&quot; and $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[You&#39;re nearly ready to export your product!
 
 The final step is to demonstrate compliance with all required documents and procedures that the government authorities in both the exporting and importing country have specified.
 
@@ -2738,7 +2738,7 @@ The customs broker that you hired previously has prepared the following mandator
 
 The administrative fees to file these documents cost $2500 which will be deducted from your funds.
 ]\
-(if:$Customs is &quot;Broker&quot; and $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Leather Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[You&#39;re nearly ready to export your product!
+(if:$Customs is &quot;Broker&quot; and $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[You&#39;re nearly ready to export your product!
 
 The final step is to demonstrate compliance with all required documents and procedures that the government authorities in both the exporting and importing country have specified.
 
@@ -3516,8 +3516,8 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 [$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]</tw-passagedata><tw-passagedata pid="50" name="Product Selection" tags="Intro/Outro" position="400,250" size="100,100">{(if:$ExportCountry is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Play&quot;)]}
 (if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type $Funds to 5000)(set: $StoredFoodProduct to &quot;Wheat&quot;)(set: $TextileProduct to &quot;Sports Footwear&quot;)(set:$StoredFoodProduct2 to &quot;Rice&quot;)(set: $TextileProduct2 to &quot;Knitted Hats&quot;)(set: $StoredFoodProduct3 to &quot;Cashew Nuts&quot;)(set: $TextileProduct3 to &quot;Yarn Woven Fabric&quot;)$ExportCountry is a developed country located in Europe. It is wealthy and has alot of advanced manufacturing.]\
-(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type $Funds to 500)(set: $StoredFoodProduct to &quot;Rice&quot;)(set: $TextileProduct to &quot;Knitted Hats&quot;)(set: $StoredFoodProduct2 to &quot;Wheat&quot;)(set: $TextileProduct2 to &quot;Leather Footwear&quot;)(set: $StoredFoodProduct3 to &quot;Cashew Nuts&quot;)(set: $TextileProduct3 to &quot;Yarn Woven Fabric&quot;)$ExportCountry is a developing country located in Southeast Asia. It has a large and young population and is quickly moving up the global value chain.]\
-(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type $Funds to 100)(set: $StoredFoodProduct to &quot;Cashew Nuts&quot;)(set: $TextileProduct to &quot;Yarn Woven Fabric&quot;)(set: $StoredFoodProduct2 to &quot;Wheat&quot;)(set: $TextileProduct2 to &quot;Leather Footwear&quot;)(set:$StoredFoodProduct3 to &quot;Rice&quot;)(set: $TextileProduct3 to &quot;Knitted Hats&quot;)$ExportCountry is a least-developed country located in Sub-Saharan Africa. It is a large producer of raw natural resources and agriculture products with limited production facilities.]
+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type $Funds to 500)(set: $StoredFoodProduct to &quot;Rice&quot;)(set: $TextileProduct to &quot;Knitted Hats&quot;)(set: $StoredFoodProduct2 to &quot;Wheat&quot;)(set: $TextileProduct2 to &quot;Sports Footwear&quot;)(set: $StoredFoodProduct3 to &quot;Cashew Nuts&quot;)(set: $TextileProduct3 to &quot;Yarn Woven Fabric&quot;)$ExportCountry is a developing country located in Southeast Asia. It has a large and young population and is quickly moving up the global value chain.]\
+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type $Funds to 100)(set: $StoredFoodProduct to &quot;Cashew Nuts&quot;)(set: $TextileProduct to &quot;Yarn Woven Fabric&quot;)(set: $StoredFoodProduct2 to &quot;Wheat&quot;)(set: $TextileProduct2 to &quot;Sports Footwear&quot;)(set:$StoredFoodProduct3 to &quot;Rice&quot;)(set: $TextileProduct3 to &quot;Knitted Hats&quot;)$ExportCountry is a least-developed country located in Sub-Saharan Africa. It is a large producer of raw natural resources and agriculture products with limited production facilities.]
 
 [You think there&#39;s strong potential to export either stored food product or textile and apparel product from $ExportCountry, but first you need to understand what is involved in exporting.
 
