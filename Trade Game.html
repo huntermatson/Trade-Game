@@ -1471,9 +1471,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 (if:$Contract is &quot;Account&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 230)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Fundraising&quot;)]
 
-(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">{(if:$Time is not 0)[All your pre-export preparations are complete. In- total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]
-(if:$Time is 0)[All your pre-export preparations are complete. Your export readiness activities did not take any time.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]}
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
+(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
 For the customs option, you selected: (if:$Customs is &quot;Training&quot;)[(text-colour:red)[&#39;&#39;Undertake training on customs and border procedures.&#39;&#39;]
 ](if:$Customs is &quot;Broker&quot;)[(text-colour:red)[&#39;&#39;Hire a customers broker to handle customs procedures.
 &#39;&#39;]](if:$Customs is &quot;Research&quot;)[(text-colour:red)[&#39;&#39;Independently research customs and border procedures on the internet.&#39;&#39;
@@ -1566,7 +1564,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -1634,7 +1632,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -1702,7 +1700,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -1770,7 +1768,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -1846,7 +1844,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -1920,7 +1918,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;}
-    	&lt;th&gt;Fundraising&lt;/th&gt;
+    	&lt;th&gt;Financing&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Cost&lt;/th&gt;
         &lt;th style=&quot;width:7%&quot;&gt;Time&lt;/th&gt;
     &lt;/tr&gt;
@@ -2165,22 +2163,25 @@ Ideas turn into businesses every day. Initially, many of these businesses are un
 NOTE: If you are exporting to Sarvarhara, registration is a must!
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a conveyance method?]\
+(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a shipping method?]\
 
-Choosing a conveyance method for international trade involves considering several factors such as cost, speed, reliability, security, and the nature of the product being shipped.
+Choosing a shipping method for international trade involves considering several factors such as cost, speed, reliability, security, and the nature of the product.
 
-Some common methods of transportation include ocean freight, air freight, road freight, and rail freight. Each method has its own advantages and disadvantages depending on the specific requirements of the trade.
+Some common methods of transportation include sea freight, air freight, overland transport. Each method has its own advantages and disadvantages depending on the specific requirements of the trade.
 
-&#39;&#39;Sea freight:&#39;&#39; Maritime transport is the way the largest volume of goods is shipped around the world. There are many options for ocean freight, including booking a container on a regular shipping line or chartering a vessel for a specific type of freight.  The cost of ocean freight is usually based on the good, how much it weighs, and its volume. Besides the cost of the freight, traders need to be aware of potential port charges, terminal charges, or adjustment factors such as for fuel or currency, as these can increase costs. 
-&#39;&#39;Road transportation (trucking):&#39;&#39; This is a very flexible mode of transportation. Shipping containers can be directly offloaded onto trucks, which can then bring the cargo to its destination, roads permitting. In terms of time required, trucking can compete with air freight for short- and medium-distance hauls and is significantly less expensive. However, trucking can become more expensive on longer distances and laws may prohibit freight trucks from crossing borders. Countries also have different regulations in terms of size and weight that may make trucking difficult or impossible. 
-&#39;&#39;Rail transport: &#39;&#39;Transport by train can be a very efficient means of moving cargo, with generally low costs and specialized railcars that facilitate packing depending on the type of good. Standard shipping containers can also be moved directly between ship, truck, and rail. However, rail freight can be very slow and there are increased risks of transportation-related damage to goods because of shocks during movement and coupling/decoupling of the railcars. Most importantly, they only serve destinations with rail infrastructure. 
-&#39;&#39;Air freight:&#39;&#39; The shipment of goods by aircraft is the fastest, but also the most expensive, form of transportation. Air freight can make sense for small or perishable shipments. Shipments are also generally more traceable and can be delivered more directly to the final destination. 
+&#39;&#39;Sea freight:&#39;&#39; Maritime transport is how the majority of goods are shipped around the world. There are many options for sea freight, including booking a container on a regular shipping line or chartering a vessel for a specific type of freight.  The cost of sea freight is usually based on characteristics of the goods, such as how much they weigh, and their volume as well as the distance to the final destination. Besides the cost of the freight, traders need to be aware of potential port charges, terminal charges, or variable factors such fuel costs or currency conversions, as these can increase costs. 
 
-* &#39;&#39;Kujuma:&#39;&#39; It is not advisable to use land conveyance becuase the infrastructure is not sufficient to transport goods in long distance. There is a sea port and multiple airports available for transportation.
-* &#39;&#39;Sarvahara:&#39;&#39; Air freight and sea freight are more common when exporting to Kujuma. All conveyance methods are available when exporting to Luminaria.
-* &#39;&#39;Luminaria:&#39;&#39; All conveyance methods are available when sending goods to Sarvahara. Air freight and sea freight are more common when exporting to Kujuma. 
+&#39;&#39;Overland transport:&#39;&#39; Overland transport is a very flexible mode of shipping products. Shipping containers can be directly offloaded onto trucks or railbeds, which can then bring the cargo to its destination. For short- and medium-distance hauls, overland transport is significantly less expensive than air freight yet has competitive shippings times. However, on longer distances overland transport can become more expensive and laws may prohibit freight trucks and railcars from crossing borders. Differences in weight limit restrictions, road conditions, and rail guage sizes may inhibit cross-border overland transport. Importantly, this shipping method is dependent upon sufficient infrastructure, including road and rail networks, and may be impacted by conflict and polical instablilty.
 
-In reality, you may use &#39;&#39; &lt;a href=&quot;https://learning.intracen.org/course/info.php?id=277&quot; target=&quot;_blank&quot;&gt; ITC Introduction to International Transport and Logistics&lt;/a&gt;&#39;&#39;  to take an online course that introduces small and medium enterprises (SMEs) to the basic transport and logistical requirements of export operations, including cross-border sea freight, air freight and packaging procedures.
+&#39;&#39;Air freight:&#39;&#39; The shipment of goods by aircraft is the fastest but also the most expensive form of transportation. Air freight can make sense for small high-value shipment or those which are perishable or time-sensitive.
+
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Below is a description of the infrastructure conditions in your available import and export locations:]
+
+* &#39;&#39;Kujuma:&#39;&#39; Overland transport is not advisable for imports to or exports from Kujuma becuase of insufficient local infrastructure. There is a sea port and multiple airports available for transportation.
+* &#39;&#39;Sarvahara:&#39;&#39; Sarvahara has a well-developed road and rail network, as well as several seaports and airports throughout the country.  All conveyance methods are available when importing to or exporting from Sarvahara.
+* &#39;&#39;Luminaria:&#39;&#39;  Luminaria has a well-developed road and rail network, as well as several seaports and airports throughout the country.  All conveyance methods are available when importing to or exporting from Luminaria.
+
+A good source to learn more about this topic is the &#39;&#39; &lt;a href=&quot;https://learning.intracen.org/course/info.php?id=277&quot; target=&quot;_blank&quot;&gt; ITC Introduction to International Transport and Logistics&lt;/a&gt;&#39;&#39;  online course. This course teaches users the basic transport and logistical requirements of export operations, including cross-border sea freight, air freight and packaging procedures.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
@@ -2198,17 +2199,12 @@ You may consider some of the following factors when choosing your country of exp
 A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[When the product has arrived the destination, how to deliver it to the customer?]\
-If the goods are already in the destination country, then it would be more efficient to use a domestic courier service to deliver the goods. This is because domestic courier services are usually more familiar with the local regulations, customs procedures, and transportation infrastructure in the destination country. 
-However, if the goods are time-sensitive or require specialized handling, such as refrigeration or hazardous materials handling, then an international courier service may still be the best option, even if the goods are already in the destination country. 
+(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I get my product from the port to my customer?]\
+Once your goods have arrived in the destination country, you have a few options to get your goods the final mile to your customer. 
 
-When the product has arrived at the destination, there are several options to deliver it to the customer, depending on the type of courier service that was used and the customer&#39;s preferences. Here are some common delivery options:
+If your goods are time-sensitive or require specialized handling, such as refrigeration or hazardous materials, then an international courier service may be a good, but expensive, option.
 
-&#39;&#39;Doorstep Delivery: &#39;&#39;This is the most common option, where the courier company delivers the product directly to the customer&#39;s doorstep. The customer is usually required to sign for the delivery, to confirm that they have received the product.
-
-&#39;&#39;Collection Points: &#39;&#39;Some courier companies offer the option for customers to collect their packages from a designated collection point, such as a local post office or courier depot. This option may be more convenient for customers who are not able to receive deliveries at home.
-
-&#39;&#39;Locker Delivery: &#39;&#39;Some courier companies offer locker delivery services, where the product is delivered to a locker at a designated location, and the customer can collect the product at their convenience using a unique code or key.
+If your goods are not time-sensitive or require specialized handling, domestic courier services are usually more familiar with the local regulations and may be more adept at navigating the delivery in the destination country. Furthermore, domestic couriers tend to be more economical than their international counterparts.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
@@ -2224,48 +2220,43 @@ When the product has arrived at the destination, there are several options to de
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
 
-&#39;&#39;Letter of credit:&#39;&#39; This is a financial instrument issued by a bank at the request of the importer or buyer, promising to pay the exporter or seller a specified amount of money within a specified timeframe, once the seller has provided all the required documents to prove that the goods have been shipped and comply with the agreed terms and conditions. The LC serves as a guarantee to the seller that they will be paid, even if the buyer fails to make the payment. It also provides the buyer with some protection against the seller&#39;s failure to deliver the goods or meet the terms of the agreement. LCs are commonly used in international trade to mitigate the risk of non-payment and ensure a smooth transaction between the buyer and the seller.
- &#39;&#39;Promissory note:&#39;&#39; This is another financial instrument commonly used in international trade. It is a written promise by the importer or buyer to pay a specific amount of money to the exporter or seller at a predetermined time or on-demand. The promissory note is a legally binding document that outlines the terms and conditions of the payment, including the interest rate, payment due date, and any penalties for late payment. The exporter can use the promissory note as collateral to secure financing from banks or other financial institutions.
-&#39;&#39;Open account: &#39;&#39;This is a payment method where the buyer agrees to pay the seller after a set period of time, usually 30, 60, or 90 days after the goods have been shipped. This method is more common between established trading partners who have a good credit history with each other.
+&#39;&#39;Letter of credit (LC):&#39;&#39; LCs are commonly used in international trade to mitigate the risk of non-payment and ensure a smooth transaction between the buyer and the seller. This is a financial instrument issued by a bank at the request of the importer or buyer, promising to pay the exporter or seller an agreed amount of money once the seller has met their contractual obligations. The LC serves as a guarantee to the seller that they will be paid without risk of the buyer witholding payment. It also provides the buyer with some protection against the seller&#39;s failure to deliver the goods or meet the terms of the agreement.
+
+&#39;&#39;Promissory note:&#39;&#39; A promissory note is another financial instrument commonly used in international trade. It is a direct contract between the buyer and seller, with the buyer (importer) agreeing to pay a specific amount of money to the seller (exporter) at a pre-determined time or on demand. The promissory note is a legally binding document that outlines the terms and conditions of the payment, such as the interest rate, payment due date, and any penalties for late payment. Like a letter of credit, the exporter can use the promissory note as collateral to secure financing from banks or other financial institutions.
+
+&#39;&#39;Open account: &#39;&#39;This is a payment method where the buyer agrees to pay the seller after a set period of time, usually 30, 60, or 90 days after the goods have been shipped. Because of the risk of non-payment, this method is more common between established trading partners who have a good credit history with each other.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="31" name="Help Fundraising" tags="Help" position="1225,550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How much extra financing do I need?]\
-To determine how much extra financing you need, you should first create a budget that outlines all the costs associated with your international trade transaction, including production, transportation, insurance, and any customs or regulatory fees. It&#39;s important to remember to consider any potential risks or unforeseen expenses that may arise during the transaction and factor those into your budget as well.
-In reality,  you may also use &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39; to navigate procedures, time, and cost. For businesses with E-commerce, you may also use &#39;&#39; &lt;a href=&quot;https://tools.ecomconnect.org/calculator/#/&quot; target=&quot;_blank&quot;&gt;E-commerce cost calculator&lt;/a&gt;&#39;&#39; to compare selling fees between platforms.
+To determine how much extra financing you need, you should first create a budget that outlines all the costs associated with your international trade transaction, including production, transportation, insurance, and any customs or regulatory fees. It is important to consider any potential risks or unforeseen expenses that may arise during the transaction and factor those into your budget as well.
 
+A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;. If you are making use of an e-commerce platform, you may also use the &#39;&#39; &lt;a href=&quot;https://tools.ecomconnect.org/calculator/#/&quot; target=&quot;_blank&quot;&gt;e-commerce cost calculator&lt;/a&gt;&#39;&#39; to compare selling fees between platforms.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How can I raise more capital?]\
-Getting a bank loan can be a good idea. When getting a loan for your business, there are several important things to keep in mind:
+&#39;&#39;Bank Loan&#39;&#39;
+
+You may find that you need additional financing to complete your export. One option is a bank loan. When getting a loan for your business, there are several important things to keep in mind:
 0. &#39;&#39;Credit history: &#39;&#39;Your personal and business credit history will play a big role in whether you are approved for a loan and what terms you are offered.
-0. &#39;&#39;Collateral: &#39;&#39;Depending on the type of loan, you may be required to provide collateral, such as real estate, inventory, or accounts receivable, to secure the loan.
+0. &#39;&#39;Collateral: &#39;&#39;Depending on the type of loan, you may be required to provide collateral, such as real estate, inventory, or accounts receivable to secure the loan.
 0. &#39;&#39;Interest rate and fees: &#39;&#39;Be sure to shop around and compare interest rates and fees from different lenders to get the best deal possible.
-0. &#39;&#39;Repayment terms:&#39;&#39; Understand the repayment terms of the loan, including the length of the loan, the repayment schedule, and any penalties for early repayment.
-0. &#39;&#39;Business plan: &#39;&#39;Having a solid business plan in place can help you secure financing and demonstrate to lenders that you have a clear plan for using the funds and generating revenue to repay the loan.
-0. &#39;&#39;Specialized loan for exporters : &#39;&#39;These loans are designed to provide financing for businesses that export goods or services, and they may come with specific terms and conditions that are tailored to the needs of exporters.
+0. &#39;&#39;Repayment terms:&#39;&#39; Understand the terms of the loan, including the length of the loan, the repayment schedule, and any penalties for early payment.
+0. &#39;&#39;Business plan: &#39;&#39;Having a solid business plan in place can demonstrate to lenders that you have a clear plan for using the funds and generating revenue to repay the loan, thus helping you to secure financing. 
 
-Asking customers to prepay for products in international trade can be a nice practice. Prepayment provides a level of security to the exporter, as it ensures that they will receive payment for the goods before they are shipped. However, prepayment can also be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods. It is important for exporters to weigh the risks and benefits of prepayment.
+&#39;&#39;Customer Prepayment&#39;&#39;
 
-[$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is a HS code?]\
-The Harmonized Commodity Description and Coding System (HS) is an internationally standardized system of names and numbers used by customs to classify traded products.  The system assigns specific six-digit codes for varying classifications and commodities. Countries are allowed to add longer codes to the first six digits for further classification. 
-
-&lt;a href=&quot;https://globaltradehelpdesk.org/en/resources/search-hs-code_blank&quot;&gt;Global Trade Helpdesk&lt;/a&gt; is helpful for locating HS codes for your products.
+You may find that you need additional financing to complete your export. If this is the case, you may consider asking your customer(s) to prepay for products. Prepayment provides a level of security to the exporter, as it ensures that they will receive payment for the goods before they are shipped. However, prepayment can also be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods. It is important for exporters to weigh the risks and benefits of prepayment before deciding on this option.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need the insurance?]\
-Businesses should consider which risks they are most likely to face with any given transaction and weigh the costs and potential benefits of purchasing some form of trade-related insurance.
+(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is an HS code?]\
+The Harmonized Commodity Description and Coding System (HS) an international product nomenclature developed by the World Customs Organization. HS Codes are an internationally standardized system of names and numbers used by customs to classify traded products.  The system categorizes goods and commodities into a six-digit numerial system, grouping similiar products into chapters and headings. Countries are permitted to append additional digits to the first six digits for further classification.
 
-Here are some examples.
-&#39;&#39;Bonds&#39;&#39; are a financial product that ensures payment of a transaction. It is a type of insurance whereby an insurance company guarantees scheduled payments of interest and principal on a bond or other security in cases where the issuer of the bond or security has defaulted on payment. 
-&#39;&#39;Credit insurance&#39;&#39; is a frequently used type of trade insurance. Importers guarantee to exporters that they will pay them in full when the contractual conditions are met. If the buyer does not fulfil the contract, the insurance company compensates the seller. 
-&#39;&#39;Foreign exchange risk insurance&#39;&#39; is a forward operation where a contract can be arranged with a financial institution to buy/sell currency on a specific date at a pre-defined exchange rate. This type of insurance is offered by financial institutions to mitigate loss from exchange rate fluctuations. 
-&#39;&#39;Financial guarantees&#39;&#39; are binding, non-cancellable promises backed by banks or insurers to underwrite a contract and make payments to a recipient if terms are not met. Besides protecting the exporter against non-payment, guarantees can also protect importers against the risk that the supplier will not fulfil the contract. 
-&#39;&#39;Political risk insurance&#39;&#39; covers the risk of the overseas government intervening in the investment, and also if events that are considered “political” in nature interfere with a transaction. Examples of the latter situation include the expropriation of assets or the outbreak of violence. Although sometimes sold separately, it is important to note that many credit insurance contracts also cover political risk. 
-&#39;&#39;Product liability insurance&#39;&#39; covers risks from litigation if the product fails to comply with national regulations.
-&#39;&#39;Transit insurance&#39;&#39;, for merchandise that is currently being transported, includes:
-Marine cargo insurance, which protects the shipment of merchandise via a cargo vessel, including from ship to terminal.
-&#39;&#39;Surety&#39;&#39; is a guarantee issued by a third party to pay the loss suffered by one party in a contract in the event of complete failure to fulfil a contract. In this case, the third party assumes the responsibility of paying the contract.
-&#39;&#39;Letters of credt&#39;&#39; involve intermediary banks to guarantee you will receive payment from your customer promptly, but comes with added costs. 
+The &#39;&#39;&lt;a href=&quot;https://globaltradehelpdesk.org/en/resources/search-hs-code&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39; has developed a tool to assist you with finding the HS code(s) for your product(s).
+
+[$NextButtonFormat[Back]
+(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need insurance?]\
+You should consider any risks that you might face along your journey and determine whether you should purchase some form of trade-related insurance. 
+
+For this game, you must select simply whether to purchase a generic insurance or not, but in real life, some common types of trade-related insurance can be found on &#39;&#39; &lt;a href=&quot;https://trade4msmes.org/msme-resources/msmes-guides/trade-insurance/&quot; target=&quot;_blank&quot;&gt;Trade4MSMEs&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
@@ -3598,7 +3589,9 @@ tbody tr:hover {background-color: #D6EEEE;}
 (click-goto:&quot;Next Step&quot;, &#39;Market Selection&#39;)]
 (box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Product Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="51" name="Quarantine" tags="" position="1625,800" size="100,100">(goto: &quot;Duty and tax assessment&quot;)
 
-(if: $Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;[(alert:&quot;Besides the mandatory inspection, Sarvahara also has a strict quarantine policy for importing food product, which takes another 7 days&quot;)(set: $Time to ($Time + 7))(goto: &quot;Duty and tax assessment&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Ready to Export" tags="2-Point-of-Export Intro/Outro" position="1100,250" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
+(if: $Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;[(alert:&quot;Besides the mandatory inspection, Sarvahara also has a strict quarantine policy for importing food product, which takes another 7 days&quot;)(set: $Time to ($Time + 7))(goto: &quot;Duty and tax assessment&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Ready to Export" tags="2-Point-of-Export Intro/Outro" position="1100,250" size="100,100">{(if:$Time is not 0)[All your pre-export preparations are complete. In- total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]
+(if:$Time is 0)[All your pre-export preparations are complete. Your export readiness activities did not take any time.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]}
+(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 ---
@@ -3739,52 +3732,50 @@ Now that you have received payment from your customer, you need to repay your lo
 (if:$Finance is &quot;Prepay&quot; )[You delivered the product to your customer and the customer paid you all of the remaining amount of  $(print:$Revenue - $PrepayDisbursement).]\
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Summary&#39;)]}
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="55" name="Second Feedback" tags="Help" position="1100,1425" size="100,100">&lt;!--(set:$Contract to &quot;Promissory&quot;)(set:$Conveyance to &quot;Land&quot;)(set:$Finance to &quot;Loan&quot;)(set:$Insurance to &quot;Insurance&quot;)--&gt;
-Your product is about to leave $ExportCountry to be sent to $ImportCountry! Here is some feedback on your responses so far.
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="55" name="Second Feedback" tags="Help" position="1100,1425" size="100,100">Your product is about to leave $ExportCountry to be sent to $ImportCountry! Here is some feedback on your responses so far.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Financial Instrument]\
-For the financial instrument options, you selected: (if:$Contract is &quot;Letter&quot;)[(text-colour:red)[&#39;&#39;Letter of credit.&#39;&#39;]
+For the financial instrument option, you selected: (if:$Contract is &quot;Letter&quot;)[(text-colour:red)[&#39;&#39;Letter of credit.&#39;&#39;]
 ](if:$Contract is &quot;Promissory&quot;)[(text-colour:red)[&#39;&#39;Promissory note.
 &#39;&#39;]](if:$Contract is &quot;Account&quot;)[(text-colour:red)[&#39;&#39;Open account.&#39;&#39;
 ]]\
 
 Letter of credit is a good choice as it can mitigate the risk of non-payment and ensure a smooth transaction between the buyer and the seller.
 
-Promissory note is a good choiceas since it serves as a guarantee to the seller if the buyer fails to make the payment.
+Promissory note is a good choice since it provides a legal guarantee of payment by the buyer that can be enforced in the event of non-payment..
 
-Open account may have some risk if trading partners do not have a good credit history with each other.
+Open account agreements are risky because of their informal nature. It is advisable to use this arrangement only when you have an established and trusted relationship with your trading partner(s).
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Financing&amp;fundraising]\
-For the financing&amp;fundraising options, you selected: (if:$Finance is &quot;Loan&quot;)[(text-colour:red)[&#39;&#39;Request a loan from a bank.&#39;&#39;]
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Financing]\
+For the financing option, you selected: (if:$Finance is &quot;Loan&quot;)[(text-colour:red)[&#39;&#39;Request a loan from a bank.&#39;&#39;]
 ](if:$Finance is &quot;Prepay&quot;)[(text-colour:red)[&#39;&#39;Ask your customer to pre-pay.
 &#39;&#39;]](if:$Finance is &quot;NoFinance&quot;)[(text-colour:red)[&#39;&#39;Continue with current funding.&#39;&#39;
 ]]\
 
-Getting a bank loan is a good idea, but you need to consider interests rates and the ability to repay.
+A bank loan can be a good idea, but you need to consider interests rates and your ability to repay the loan. You should only select this option If you feel you need additional funding.
 
-Asking for prepayment from customers can be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods.
+Asking for prepayment from customers can be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods. You may choose this if you are unable to secure a bank loan but still think you may need additional funding to complete your export.
 
-Not considering financing can be risky as there may be some unexpected fees occur during exporting.
+Continuing with current financing is fine as long as you have sufficient funds available. Unforeseen costs can arise at various points in your export journey.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Conveyance]\
-For the conveyance options, you selected: (if:$Conveyance is &quot;Air&quot;)[(text-colour:red)[&#39;&#39;Air Freight.&#39;&#39;]
+For the shipping option, you selected: (if:$Conveyance is &quot;Air&quot;)[(text-colour:red)[&#39;&#39;Air Freight.&#39;&#39;]
 ](if:$Conveyance is &quot;Sea&quot;)[(text-colour:red)[&#39;&#39;Sea Freight.
-&#39;&#39;]](if:$Conveyance is &quot;Land&quot;)[(text-colour:red)[&#39;&#39;Overland Transport&#39;&#39;
+&#39;&#39;]](if:$Conveyance is &quot;Land&quot;)[(text-colour:red)[&#39;&#39;Overland Transport.&#39;&#39;
 ]]\
 
+Sea freight is the most economical but slowest form of shipping. This selection is good if you are not time constrained. 
 
-Sea freight is the way the largest volume of goods is shipped around the world. Traders need to be aware of potential port charges, terminal charges, or adjustment factors such as for fuel or currency, as these can increase costs. 
+Overland transportation is a very flexible mode of transportation, and usual shipping times are in between sea and air freight times. However, it also carries increased risks and is only available for certain import-export country pairings. 
 
-Road transportation is a very flexible mode of transportation, but there are increased risks of transportation-related damage to goods because of shocks during movement. Most importantly, it only serve destinations with sufficient infrastructure. 
-
-Air freigh tis the fastest, but also the most expensive, form of transportation, normally for small or perishable shipments and luxury items.
+Air freight is the fastest, but also the most expensive form of transportation. This may be a good idea if you are short on time.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Insurance]\
-For the insurance options, you selected: (if:$Insurance is &quot;Insurance&quot;)[(text-colour:red)[&#39;&#39;Buy insurance.&#39;&#39;]
-](if:$Insurance is  &quot;NoInsurance&quot;)[(text-colour:red)[&#39;&#39;Not buy insurance.
+For the insurance option, you selected: (if:$Insurance is &quot;Insurance&quot;)[(text-colour:red)[&#39;&#39;Buy insurance.&#39;&#39;]
+](if:$Insurance is  &quot;NoInsurance&quot;)[(text-colour:red)[&#39;&#39;Decline insurance.
 &#39;&#39;]]\
 
-Buying insurance can be very helpful since there might be risks with transaction and other unexpected incidents.
+Buying insurance can be very helpful to protect you since there there are many unknowns throughout the trade journey which may incur unforeseen costs.
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Ready to Import&#39;)]
