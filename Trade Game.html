@@ -1213,6 +1213,7 @@ Make sure to remember it or write it down.\
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
+    gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
 gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Feedback&#39;
   });
@@ -1478,7 +1479,18 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 (if:$Contract is &quot;Account&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 230)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Fundraising&quot;)]
 
-(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
+(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;First Feedback&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
 For the customs option, you selected: (if:$Customs is &quot;Training&quot;)[(text-colour:red)[&#39;&#39;Undertake training on customs and border procedures.&#39;&#39;]
 ](if:$Customs is &quot;Broker&quot;)[(text-colour:red)[&#39;&#39;Hire a customers broker to handle customs procedures.
 &#39;&#39;]](if:$Customs is &quot;Research&quot;)[(text-colour:red)[&#39;&#39;Independently research customs and border procedures on the internet.&#39;&#39;
@@ -2014,7 +2026,7 @@ $NextButtonFormat[Next Step ]
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
 
-  gtag(&#39;config&#39;, &#39;G-ETXC5JLF11&#39;);
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Game Over&#39;
   });
@@ -2135,7 +2147,18 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 [$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;HSCodeVerification&#39;)]
 {
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="23" name="HSCodeSecondChance" tags="" position="1225,875" size="100,100">(if:$Product is &quot;Cashew Nuts&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;080131&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="23" name="HSCodeSecondChance" tags="" position="1225,875" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;HSCodeSecondChance&#39;
+  });
+&lt;/script&gt;
+(if:$Product is &quot;Cashew Nuts&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;080131&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Yarn Woven Fabric&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;540832&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Rice&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is &#39;&#39;100630&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Knitted Hats&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is  &#39;&#39;611120&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
@@ -2168,7 +2191,18 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if: $HSCode is _HScode or _HScode2)[(go-to:&quot;Correct&quot;)
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Should I register my business?]\
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Business Registration&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Should I register my business?]\
 
 Ideas turn into businesses every day. Initially, many of these businesses are unregistered, meaning that they operate informally and therefore have not gained formal recognition from a government authority or internationally recognized organization. At some point, many businesses opt to seek formal registration as it provides comprehensive legal recognition and protection for your business.
 
@@ -2183,7 +2217,18 @@ Ideas turn into businesses every day. Initially, many of these businesses are un
 NOTE: If you are exporting to Sarvarhara, registration is a must!
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a shipping method?]\
+(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Conveyance&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a shipping method?]\
 
 Choosing a shipping method for international trade involves considering several factors such as cost, speed, reliability, security, and the nature of the product.
 
@@ -2204,7 +2249,18 @@ Some common methods of transportation include sea freight, air freight, overland
 A good source to learn more about this topic is the &#39;&#39; &lt;a href=&quot;https://learning.intracen.org/course/info.php?id=277&quot; target=&quot;_blank&quot;&gt; ITC Introduction to International Transport and Logistics&lt;/a&gt;&#39;&#39;  online course. This course teaches users the basic transport and logistical requirements of export operations, including cross-border sea freight, air freight and packaging procedures.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
+(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Country Selection&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
 You may consider some of the following factors when choosing your country of export:
 0. &#39;&#39;Geo-economic factors:&#39;&#39; Consider the location, level of development, and political aspects of the economy.
 0. &#39;&#39;Business environment: &#39;&#39;Evaluate the business environment of the country you are considering. Think about factors such as ease of doing business and legal frameworks.
@@ -2219,7 +2275,18 @@ You may consider some of the following factors when choosing your country of exp
 A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I get my product from the port to my customer?]\
+(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Courier&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I get my product from the port to my customer?]\
 Once your goods have arrived in the destination country, you have a few options to get your goods the final mile to your customer. 
 
 If your goods are time-sensitive or require specialized handling, such as refrigeration or hazardous materials, then an international courier service may be a good, but expensive, option.
@@ -2227,7 +2294,18 @@ If your goods are time-sensitive or require specialized handling, such as refrig
 If your goods are not time-sensitive or require specialized handling, domestic courier services are usually more familiar with the local regulations and may be more adept at navigating the delivery in the destination country. Furthermore, domestic couriers tend to be more economical than their international counterparts.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
+(click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Customs Option&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
 
 &#39;&#39;Hire a customs broker :&#39;&#39; Customs brokers and clearing agents are specialists on customs rules and procedures. They can help ensure import documents are correct and may assist with forwarding arrangements.  In some economies, it is compulsory when an import value is above a certain threshold to use a licensed customs agent to clear goods through customs. In others, businesses simply choose to hire a customs broker to help avoid potentially costly errors. To find a licensed customs broker, start by searching the national customs agency where the import will take place, as they frequently list registered brokers that can be contacted.
 
@@ -2238,7 +2316,18 @@ If your goods are not time-sensitive or require specialized handling, domestic c
 &#39;&#39;Independent research :  &#39;&#39;To be successful in your export journey, it can be helpful to be familiar with customs authorities, enquiry points for relevant government agencies, and border procedures in the import and export locations. You may find many of these details online or available from other sources. A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
+(click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Financial Instrument&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
 
 &#39;&#39;Letter of credit (LC):&#39;&#39; LCs are commonly used in international trade to mitigate the risk of non-payment and ensure a smooth transaction between the buyer and the seller. This is a financial instrument issued by a bank at the request of the importer or buyer, promising to pay the exporter or seller an agreed amount of money once the seller has met their contractual obligations. The LC serves as a guarantee to the seller that they will be paid without risk of the buyer witholding payment. It also provides the buyer with some protection against the seller&#39;s failure to deliver the goods or meet the terms of the agreement.
 
@@ -2247,7 +2336,18 @@ If your goods are not time-sensitive or require specialized handling, domestic c
 &#39;&#39;Open account: &#39;&#39;This is a payment method where the buyer agrees to pay the seller after a set period of time, usually 30, 60, or 90 days after the goods have been shipped. Because of the risk of non-payment, this method is more common between established trading partners who have a good credit history with each other.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="31" name="Help Fundraising" tags="Help" position="1225,550" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How much extra financing do I need?]\
+(click-goto:&quot;Back&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="31" name="Help Fundraising" tags="Help" position="1225,550" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Fundraising&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How much extra financing do I need?]\
 To determine how much extra financing you need, you should first create a budget that outlines all the costs associated with your international trade transaction, including production, transportation, insurance, and any customs or regulatory fees. It is important to consider any potential risks or unforeseen expenses that may arise during the transaction and factor those into your budget as well.
 
 A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;. If you are making use of an e-commerce platform, you may also use the &#39;&#39; &lt;a href=&quot;https://tools.ecomconnect.org/calculator/#/&quot; target=&quot;_blank&quot;&gt;e-commerce cost calculator&lt;/a&gt;&#39;&#39; to compare selling fees between platforms.
@@ -2267,19 +2367,52 @@ You may find that you need additional financing to complete your export. One opt
 You may find that you need additional financing to complete your export. If this is the case, you may consider asking your customer(s) to prepay for products. Prepayment provides a level of security to the exporter, as it ensures that they will receive payment for the goods before they are shipped. However, prepayment can also be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods. It is important for exporters to weigh the risks and benefits of prepayment before deciding on this option.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is an HS code?]\
+(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help HS Code&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is an HS code?]\
 The Harmonized Commodity Description and Coding System (HS) an international product nomenclature developed by the World Customs Organization. HS Codes are an internationally standardized system of names and numbers used by customs to classify traded products.  The system categorizes goods and commodities into a six-digit numerial system, grouping similiar products into chapters and headings. Countries are permitted to append additional digits to the first six digits for further classification.
 
 The &#39;&#39;&lt;a href=&quot;https://globaltradehelpdesk.org/en/resources/search-hs-code&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39; has developed a tool to assist you with finding the HS code(s) for your product(s).
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need insurance?]\
+(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Insurance Cost&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need insurance?]\
 You should consider any risks that you might face along your journey and determine whether you should purchase some form of trade-related insurance. 
 
 For this game, you must select simply whether to purchase a generic insurance or not, but in real life, some common types of trade-related insurance can be found on &#39;&#39; &lt;a href=&quot;https://trade4msmes.org/msme-resources/msmes-guides/trade-insurance/&quot; target=&quot;_blank&quot;&gt;Trade4MSMEs&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
+(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Market Selection&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
 To choose a market for your product, it&#39;s important to conduct market research and analysis. This can include gathering data on consumer preferences, market trends, and potential competitors. You can also consider hiring a local agent or distributor who can help you navigate the market and provide insights on cultural and regulatory differences.
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
@@ -2302,7 +2435,18 @@ One tool you may use is the &#39;&#39; &lt;a href=&quot;https://m.macmap.org/&qu
 (if:$Product is &quot;Sports Footwear&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Kujuma&lt;/a&gt;
 &lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Sarvahara&lt;/a&gt;]\
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Market Selection&#39;)]</tw-passagedata><tw-passagedata pid="35" name="Help Marketing" tags="Help" position="550,1000" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I market my product?]\
+(click-goto:&quot;Back&quot;, &#39;Market Selection&#39;)]</tw-passagedata><tw-passagedata pid="35" name="Help Marketing" tags="Help" position="550,1000" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Marketing&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I market my product?]\
 Depending on what type of product you are selling and your potential customer type, you may opt for different marketing strategies. For example, if your product is consumer ready and you are selling directly to consumers, this is known as a Business-to-Consumer (B2C) transaction. If your product is an input to produce something else, you may be selling to another business. This is know as a Business-to-Business (B2B) transaction.  B2C sales often occur online and therefore you may opt for a digital marketing strategy to spread the word about your product. B2B sales are often initiated through referrals or as a result of an in-person interaction such as a trade fair.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here are your options for your marketing strategy:]\
@@ -2313,7 +2457,18 @@ Depending on what type of product you are selling and your potential customer ty
 &#39;&#39;Business website:&#39;&#39; Having a website provides an online platform for businesses to showcase their products or services, communicate with customers, and establish their brand image. A well-designed and informative website can attract potential customers and provide them with important information such as product features, pricing, and shipping information.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose which product to export?]\
+(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Product Selection&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose which product to export?]\
 The choice of the product to export depends on factors such as demand in international markets, production capacity, and regulatory requirements. It&#39;s important to conduct thorough market research and assess the competitiveness of a chosen product before embarking on an export venture.
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
@@ -2336,7 +2491,18 @@ If you are planning to export &#39;&#39;textile &amp; apparel products&#39;&#39;
 * &#39;&#39;Sarvahara&#39;&#39; is one of the largest rice exporters in the world, producing high-quality rice varieties such as white rice. Similarly, it is known for producing high-quality knitted baby hats due to its skilled workforce and favorable climate conditions for growing cotton.
 * &#39;&#39;Luminaria&#39;&#39; is a major wheat producer with a reputation for high-quality wheat that can be used for bread and pastry products. Additionally, Luminaria is well-known for its high-end sport shoes that are often associated with major international brands, making them attractive to customers in the international market who are willing to pay a premium price for quality footwear.
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary standards?]\
+(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Help Voluntary Standards&#39;
+  });
+&lt;/script&gt;
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary standards?]\
 
 Voluntary sustainability standards (VSS) involve guidelines, rules and requirements aiming to foster sustainability along global value chains by ensuring businesses use resources and processes that do not damage the environment and people. Some examples may include organic, fair trade, or energy star.
 
@@ -2636,9 +2802,9 @@ th, td {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-ETXC5JLF11&#39;);
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
-    &#39;event_category&#39;: &#39;Into&#39;
+    &#39;event_category&#39;: &#39;Intro&#39;
   });
 &lt;/script&gt;
 {(set:$NextButtonFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-color:white)+(b4r:&quot;solid&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #00204a))
@@ -3499,12 +3665,11 @@ tbody tr:hover {background-color: #D6EEEE;}
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
 
-  gtag(&#39;config&#39;, &#39;G-ETXC5JLF11&#39;);
+  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Point Converter&#39;
   });
 &lt;/script&gt;
-
 {(set: num-type $point to 0 )[
 (if: $Customs is &quot;Training&quot;) [(set: $point to $point + 3 )]
 (if: $Customs is &quot;Broker&quot;) [(set: $point to $point + 2 )]
