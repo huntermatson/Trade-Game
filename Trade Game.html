@@ -1222,7 +1222,9 @@ Make sure to remember it or write it down.\
   })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
 
   ga(&#39;create&#39;, &#39;G-ETXC5JLF11&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;, {
+    &#39;title&#39;: &#39;Completion&#39;
+  });
 &lt;/script&gt;
 </tw-passagedata><tw-passagedata pid="15" name="Financial Instrument" tags="Contract" position="1100,375" size="100,100">(set: num-type _Cost1 to 4)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(if:$ExportCountry is &quot;Kujuma&quot;)[
 (append: ?SideBar)[
@@ -2022,7 +2024,21 @@ $NextButtonFormat[Next Step ]
 (if:$Registration is &quot;NoRegistration&quot;)+(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[Sarvahara require a business to register before exporting food! ]\
 
 $NextButtonFormat[Restart](click:&quot;Restart&quot;)[(restart:)]
-[$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
+[$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]
+
+&lt;script&gt;
+  // Google Analytics Tracking Code
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;G-ETXC5JLF11&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;, {
+    &#39;title&#39;: &#39;Lose&#39;
+  });
+&lt;/script&gt;
+</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 ---
@@ -2643,7 +2659,9 @@ $NextButtonFormat[Start Now]\
   })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
 
   ga(&#39;create&#39;, &#39;G-ETXC5JLF11&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;, {
+    &#39;title&#39;: &#39;Begin&#39;
+  });
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="44" name="Mandatory Compliances" tags="2-Point-of-Export Compliance" position="1100,1175" size="100,100">{&lt;style&gt;
 input {
 display: none;
@@ -3481,7 +3499,19 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Product Selection&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Country Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="49" name="Point Converter" tags="Summary" position="1500,1450" size="100,100">{(set: num-type $point to 0 )[
+(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Country Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="49" name="Point Converter" tags="Summary" position="1500,1450" size="100,100">&lt;script&gt;
+  // Google Analytics Tracking Code
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;https://www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;G-ETXC5JLF11&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;, {
+    &#39;title&#39;: &#39;Succeed&#39;
+  });
+&lt;/script&gt;
+{(set: num-type $point to 0 )[
 (if: $Customs is &quot;Training&quot;) [(set: $point to $point + 3 )]
 (if: $Customs is &quot;Broker&quot;) [(set: $point to $point + 2 )]
 (if: $Customs is &quot;Research&quot;)  [(set: $point to $point + 3 )]
