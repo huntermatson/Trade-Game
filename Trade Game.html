@@ -19,6 +19,7 @@ tw-story {
   color: black;
   font-family: 'MetricWeb', sans-serif;
   font-size: 18px;
+ white-space: break-spaces;
 }
 
 tw-dialog {
@@ -51,6 +52,7 @@ tw-passage{
   padding: 10px;
     padding-left: 30px;
   border-radius: 12px;
+  white-space: break-spaces;
 }
 
 tw-sidebar{
@@ -181,7 +183,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
          &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;LEI&quot;)
-[$SelectButtonFormat[&#39;&#39;Global Registration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Obtain a global business registration&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Obtain a global business registration&quot;)[(set:$Registration to &quot;LEI&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -189,7 +191,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
    &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;Local&quot;)
-[$SelectButtonFormat[&#39;&#39;National Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Register with your national government&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Register with your national government&quot;)[(set:$Registration to &quot;Local&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -197,7 +199,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;NoRegistration&quot;)
-[$SelectButtonFormat[&#39;&#39;No Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Do not register with any organization&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Do not register with any organization&quot;)[(set:$Registration to &quot;NoRegistration&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -213,6 +215,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 500, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 In addition to the decisions you have to make about the product you are exporting, you may also want to think about establishing your business more formally before you start to engage in international trade. 
 
 What would you like to do?   
@@ -252,7 +255,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;LEI&quot;)
-[$SelectButtonFormat[&#39;&#39;Global Registration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Obtain a global business registration&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Obtain a global business registration&quot;)[(set:$Registration to &quot;LEI&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -260,7 +263,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;Local&quot;)
-[$SelectButtonFormat[&#39;&#39;National Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Register with your national government&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Register with your national government&quot;)[(set:$Registration to &quot;Local&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -268,7 +271,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;NoRegistration&quot;)
-[$SelectButtonFormat[&#39;&#39;No Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Do not register with any organization&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Do not register with any organization&quot;)[(set:$Registration to &quot;NoRegistration&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -284,6 +287,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 5000, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 In addition to the decisions you have to make about the product you are exporting, you may also want to think about establishing your business more formally before you start to engage in international trade.  
 
 What would you like to do?   
@@ -323,7 +327,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
           &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;LEI&quot;)
-[$SelectButtonFormat[&#39;&#39;Global Registration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Obtain a global business registration&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Obtain a global business registration&quot;)[(set:$Registration to &quot;LEI&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -331,7 +335,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;Local&quot;)
-[$SelectButtonFormat[&#39;&#39;National Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Register with your national government&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Register with your national government&quot;)[(set:$Registration to &quot;Local&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -339,7 +343,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Registration is &quot;NoRegistration&quot;)
-[$SelectButtonFormat[&#39;&#39;No Registeration&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Do not register with any organization&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Do not register with any organization&quot;)[(set:$Registration to &quot;NoRegistration&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -377,6 +381,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 120, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 Now you need to decide the method of transport for your product. Keep in mind that each method has different associated travel times and costs, so make sure to choose the option that you have sufficient resource for.
 
 Which transportation method would you like to use?   
@@ -448,6 +453,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 600, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 Now you need to decide the method of transport for your product. Keep in mind that each method has different associated travel times and costs, so make sure to choose the option that you have sufficient resource for.
 
 Which transportation method would you like to use?   
@@ -519,6 +525,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 6000, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 Now you need to decide the method of transport for your product. Keep in mind that each method has different associated travel times and costs, so make sure to choose the option that you have sufficient resource for.
 
 Which transportation method would you like to use?   
@@ -616,7 +623,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
 Congratulations!
 
-You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]
+You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]\
 (if:$ExportCountry is &quot;Sarvahara&quot;)[
 (append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
@@ -627,7 +634,7 @@ You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now custom
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
 Congratulations!
 
-You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]
+You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]\
 (if:$ExportCountry is &quot;Luminaria&quot;)[
 (append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
@@ -638,7 +645,7 @@ You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now custom
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
 Congratulations!
 
-You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]
+You have found the correct HS code for &#39;&#39;$Product&#39;&#39;!  Now customs authorities can identify your products.]\
 
 [$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Conveyance&#39;)]
@@ -840,7 +847,8 @@ Fortunately, the insurance you purchased will provide a full refund of the lost 
 Your $Product has arrived at the border of  $ImportCountry! 
 
 Before being released to the customer, it needs to undergo customs procedures.  First you will need to fill out a customs declaration form, which requires information about your company and product.
-(if:$Registration is &quot;NoRegistration&quot;)[(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[ Unfortunately, although you have carefully filled out the customs declaration form, the Sarvahara customs office was not able to process your declaration becuase you are not a registered business.
+(if:$Registration is &quot;NoRegistration&quot;)[(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[ 
+Unfortunately, although you have carefully filled out the customs declaration form, the Sarvahara customs office was not able to process your declaration becuase you are not a registered business.
 
 $NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Game Over&#39;)]\
@@ -911,7 +919,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt; 
     	&lt;td&gt;(if: $Customs is &quot;Training&quot;)
-[$SelectButtonFormat[ &#39;&#39;Training&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Undertake training on customs and border procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Undertake training on customs and border procedures&quot;)[(set: $Customs to &quot;Training&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -919,7 +927,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Broker&quot;)
-[$SelectButtonFormat[ &#39;&#39;Broker&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Hire a customs broker to handle customs procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Hire a customs broker to handle customs procedures&quot;)[(set: $Customs to &quot;Broker&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -927,7 +935,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Research&quot;)
-[$SelectButtonFormat[ &#39;&#39;Independent research&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Independently research customs and border procedures on the internet&#39;&#39;    ] ]
 (else: )
 [(link: &quot;Independently research customs and border procedures on the internet&quot;)[(set: $Customs to &quot;Research&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -988,7 +996,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt; 
     	&lt;td&gt;(if: $Customs is &quot;Training&quot;)
-[$SelectButtonFormat[ &#39;&#39;Training&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Undertake training on customs and border procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Undertake training on customs and border procedures&quot;)[(set: $Customs to &quot;Training&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -996,7 +1004,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Broker&quot;)
-[$SelectButtonFormat[ &#39;&#39;Broker&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Hire a customs broker to handle customs procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Hire a customs broker to handle customs procedures&quot;)[(set: $Customs to &quot;Broker&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1004,7 +1012,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Research&quot;)
-[$SelectButtonFormat[ &#39;&#39;Independent research&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Independently research customs and border procedures on the internet&#39;&#39;    ] ]
 (else: )
 [(link: &quot;Independently research customs and border procedures on the internet&quot;)[(set: $Customs to &quot;Research&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -1065,7 +1073,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt; 
     	&lt;td&gt;(if: $Customs is &quot;Training&quot;)
-[$SelectButtonFormat[ &#39;&#39;Training&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Undertake training on customs and border procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Undertake training on customs and border procedures&quot;)[(set: $Customs to &quot;Training&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1073,7 +1081,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Broker&quot;)
-[$SelectButtonFormat[ &#39;&#39;Broker&#39;&#39;  ] ]
+[$SelectButtonFormat[ &#39;&#39;Hire a customs broker to handle customs procedures&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Hire a customs broker to handle customs procedures&quot;)[(set: $Customs to &quot;Broker&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1081,7 +1089,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Customs is &quot;Research&quot;)
-[$SelectButtonFormat[ &#39;&#39;Independent research&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Independently research customs and border procedures on the internet&#39;&#39;    ] ]
 (else: )
 [(link: &quot;Independently research customs and border procedures on the internet&quot;)[(set: $Customs to &quot;Research&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -1113,75 +1121,76 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 (if:$Customs is &quot;Research&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 150)(set:num-type _Cost2 to 200)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 0)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Voluntary Standards&quot;)]
 
-(if:$Customs is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Customs Option&quot;)]</tw-passagedata><tw-passagedata pid="12" name="Customs Procedures Notebook" tags="Help" position="1225,1175" size="100,100">Here are the notes on mandatory compliance documents.
+(if:$Customs is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Customs Option&quot;)]</tw-passagedata><tw-passagedata pid="12" name="Customs Procedures Notebook" tags="Help" position="1225,1175" size="100,100">####Here are the mandatory compliance documents for your product:
 
 Make sure to remember it or write it down.\
+
 (if: $ExportCountry is &quot;Kujuma&quot; and $Product is &quot;Yarn Woven Fabric&quot; and $ImportCountry is &quot;Luminaria&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List
-4.Testing &amp; Inspection by health authorities
-5.Labelling]\
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List
+4. Testing &amp; Inspection by health authorities
+5. Labelling]\
 (if: $ExportCountry is &quot;Kujuma&quot; and $Product is &quot;Cashew Nuts&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
-1.Phytosanitary Certificate
-2.Bill of Lading
-3.Commercial Invoice
-4.Packing List
-5.Testing &amp; Inspection by health authorities
-6.GMO-free certificate
-7.Labelling]
+1. Phytosanitary Certificate
+2. Bill of Lading
+3. Commercial Invoice
+4. Packing List
+5. Testing &amp; Inspection by health authorities
+6. GMO-free certificate
+7. Labelling]\
 (if: $ExportCountry is &quot;Kujuma&quot; and $Product is &quot;Yarn Woven Fabric&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List
-4.Labelling]\
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List
+4. Labelling]\
 (if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List]
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List]\
 (if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Wheat&quot; and $ImportCountry is &quot;Sarvahara&quot;)[
-1.Phytosanitary Certificate
-2.Bill of Lading
-3.Commercial Invoice
-4.Packing List
-5.Testing &amp; Inspection by health authorities
-6.Import Permit
-7.GMO-free certificate
-8.Labelling]\
+1. Phytosanitary Certificate
+2. Bill of Lading
+3. Commercial Invoice
+4. Packing List
+5. Testing &amp; Inspection by health authorities
+6. Import Permit
+7. GMO-free certificate
+8. Labelling]\
 (if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Sports Footwear&quot; and $ImportCountry is &quot;Kujuma&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List]
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List]\
 (if: $ExportCountry is &quot;Luminaria&quot; and $Product is &quot;Wheat&quot; and $ImportCountry is &quot;Kujuma&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List]\
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List]\
 (if: $ExportCountry is &quot;Sarvahara&quot; and $Product is &quot;Rice&quot; and $ImportCountry is &quot;Kujuma&quot;)[
-1.Phytosanitary Certificate
-2.Bill of Lading
-3.Commercial Invoice
-4.Packing List
-5.Testing &amp; Inspection by health authorities
-6.Export License
-7.Labelling]\
+1. Phytosanitary Certificate
+2. Bill of Lading
+3. Commercial Invoice
+4. Packing List
+5. Testing &amp; Inspection by health authorities
+6. Export License
+7. Labelling]\
 (if: $ExportCountry is &quot;Sarvahara&quot; and $Product is &quot;Knitted Hats&quot; and $ImportCountry is &quot;Kujuma&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List]\
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List]\
 (if: $ExportCountry is &quot;Sarvahara&quot; and $Product is &quot;Knitted Hats&quot; and $ImportCountry is &quot;Luminaria&quot;)[
-1.Bill of Lading
-2.Commercial Invoice
-3.Packing List
-4.Labelling]\
+1. Bill of Lading
+2. Commercial Invoice
+3. Packing List
+4. Labelling]\
 (if: $ExportCountry is &quot;Sarvahara&quot; and $Product is &quot;Rice&quot; and $ImportCountry is &quot;Luminaria&quot;)[
-1.Phytosanitary Certificate
-2.Bill of Lading
-3.Commercial Invoice
-4.Packing List
-5.Testing &amp; Inspection by health authorities
-6.Export License
-7.Import Permit
-8.Labelling]\
+1. Phytosanitary Certificate
+2. Bill of Lading
+3. Commercial Invoice
+4. Packing List
+5. Testing &amp; Inspection by health authorities
+6. Export License
+7. Import Permit
+8. Labelling]\
 
 [$NextButtonFormat[Back]
 (click-goto:&quot;Back&quot;, &#39;Mandatory Compliances&#39;)]</tw-passagedata><tw-passagedata pid="13" name="Duty and tax assessment" tags="Tax" position="1500,925" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
@@ -1207,17 +1216,17 @@ Make sure to remember it or write it down.\
 
 [$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Courier&#39;)]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="14" name="Feedback" tags="Intro/Outro" position="1475,50" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="14" name="Feedback" tags="Intro/Outro" position="1475,50" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-    gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
-gtag(&#39;event&#39;, &#39;Passage View&#39;, {
-    &#39;event_category&#39;: &#39;Feedback&#39;
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Final Feedback&#39;
   });
-&lt;/script&gt;
+&lt;/script&gt;}
 &lt;iframe width=&quot;98%&quot; height=&quot;700px&quot; src=&quot;https://forms.office.com/e/R549Z2ZjQA?embed=true&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; style=&quot;border: none; max-width:100%; max-height:100vh&quot; allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen&gt; &lt;/iframe&gt;\
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-style: &quot;bold&quot;)[&lt;!-- AddToAny BEGIN --&gt;
 &lt;div&gt;
@@ -1231,6 +1240,7 @@ gtag(&#39;event&#39;, &#39;Passage View&#39;, {
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 100, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 You and your customer have settled on a price but now you need to agree on a contract which will cover the terms and responsibilities of each party.
 
 International Commerical Terms (Incoterms) are a set of internationally-recognized rules which define the responsibilities of sellers and buyers in an export transFinancial Instrument. The Incoterms that you have agreed with your buyer(s) is Delivered Duty Paid (DDP). 
@@ -1276,7 +1286,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Contract is &quot;Letter&quot;)
-[$SelectButtonFormat[&#39;&#39;Letter of Credit&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Letter of credit&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Letter of credit &quot;)[(set:$Contract to &quot;Letter&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1308,6 +1318,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 500, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]\
+
 You and your customer have settled on a price but now you need to agree on a contract which will cover the terms and responsibilities of each party.
 
 International Commerical Terms (Incoterms) are a set of internationally-recognized rules which define the responsibilities of sellers and buyers in an export transFinancial Instrument. The Incoterms that you have agreed with your buyer(s) is Delivered Duty Paid (DDP). 
@@ -1353,7 +1364,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Contract is &quot;Letter&quot;)
-[$SelectButtonFormat[&#39;&#39;Letter of Credit&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Letter of credit&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Letter of credit &quot;)[(set:$Contract to &quot;Letter&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1432,7 +1443,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Contract is &quot;Letter&quot;)
-[$SelectButtonFormat[&#39;&#39;Letter of Credit&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Letter of credit&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Letter of credit &quot;)[(set:$Contract to &quot;Letter&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1479,18 +1490,17 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 (if:$Contract is &quot;Account&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 230)(set:num-type _Cost2 to 0)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 2)(set:num-type _TimeCost2 to 1)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Fundraising&quot;)]
 
-(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="425,1125" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(if:$Contract is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Financial Instrument&quot;)]</tw-passagedata><tw-passagedata pid="17" name="First Feedback" tags="Help" position="1000,250" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;First Feedback&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Customs Option]\
 For the customs option, you selected: (if:$Customs is &quot;Training&quot;)[(text-colour:red)[&#39;&#39;Undertake training on customs and border procedures.&#39;&#39;]
 ](if:$Customs is &quot;Broker&quot;)[(text-colour:red)[&#39;&#39;Hire a customers broker to handle customs procedures.
 &#39;&#39;]](if:$Customs is &quot;Research&quot;)[(text-colour:red)[&#39;&#39;Independently research customs and border procedures on the internet.&#39;&#39;
@@ -1539,8 +1549,8 @@ E-commerce platforms can increase online sales by finding customers in markets y
 
 A well-designed business website can attract potential customers and provide them with important information such as product features, pricing, and shipping information. However, setting up a useable website requires technical skills, including optimizing your website so that it appears in search results and can be found by potential customers.
 
-{[$NextButtonFormat[Next Step]
-(click-goto:&quot;Next Step&quot;, &#39;Ready to Export&#39;)]}</tw-passagedata><tw-passagedata pid="18" name="Fundraising" tags="2-Point-of-Export Finance" position="1100,550" size="100,100">(set: num-type _Cost1 to 0)(set:_Cost2 to &quot;5%&quot;)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 0)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 1)(set: $InterestRate to 14)(if:$Contract is &quot;Letter&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[
+[$NextButtonFormat[Back]
+(click-goto:&quot;Back&quot;, &#39;Ready to Export&#39;)]</tw-passagedata><tw-passagedata pid="18" name="Fundraising" tags="2-Point-of-Export Finance" position="1100,550" size="100,100">(set: num-type _Cost1 to 0)(set:_Cost2 to &quot;5%&quot;)(set:num-type _Cost3 to 0)(set:num-type _TimeCost1 to 0)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 1)(set: $InterestRate to 14)(if:$Contract is &quot;Letter&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[
 (append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
@@ -1591,7 +1601,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1599,7 +1609,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1659,7 +1669,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1667,7 +1677,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1727,7 +1737,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1735,7 +1745,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1795,7 +1805,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1803,7 +1813,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1811,7 +1821,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Prepay&quot;)
-[$SelectButtonFormat[&#39;&#39;Customer Pre-pay&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Ask your customer to pre-pay&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Ask your customer to pre-pay&quot;)[(set:$Finance to &quot;Prepay&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -1871,7 +1881,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1879,7 +1889,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1887,7 +1897,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Prepay&quot;)
-[$SelectButtonFormat[&#39;&#39;Customer Pre-pay&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Ask your customer to pre-pay&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Ask your customer to pre-pay&quot;)[(set:$Finance to &quot;Prepay&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -1945,7 +1955,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;NoFinance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Finance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Continue with current funding&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Continue with current funding &quot;)[(set:$Finance to &quot;NoFinance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -1953,7 +1963,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Loan&quot;)
-[$SelectButtonFormat[&#39;&#39;Bank Loan&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Request a loan from a bank&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Request a loan from a bank &quot;)[(set:$Finance to &quot;Loan&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -1961,7 +1971,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Finance is &quot;Prepay&quot;)
-[$SelectButtonFormat[&#39;&#39;Customer Pre-pay&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Ask your customer to pre-pay&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Ask your customer to pre-pay&quot;)[(set:$Finance to &quot;Prepay&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -2015,24 +2025,22 @@ Since you are not a globally registrated business and you do not have a letter o
 ###Good news! 
 The customer agreed to partially prepay for your product and transfered &#39;&#39;$$PrepayDisbursement&#39;&#39; in your Funds.]\
 (if:_accident is not 1)[
-###Bad news. 
+###Bad news
 The customer refused to prepay and will only pay for your product upon the successful delivery.]]
 
 $NextButtonFormat[Next Step ]
-(click-goto:&quot;Next Step&quot;, &#39;HSCodeIntro&#39;)</tw-passagedata><tw-passagedata pid="20" name="Game Over" tags="Intro/Outro" position="1325,50" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Next Step&quot;, &#39;HSCodeIntro&#39;)</tw-passagedata><tw-passagedata pid="20" name="Game Over" tags="Intro/Outro" position="1325,50" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Game Over&#39;
   });
-&lt;/script&gt;
-(replace:?sidebar)[(forget-undos:-1)](align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;fade-in-out&quot;,&quot;bold&quot;)[Game Over]
-
+&lt;/script&gt;}
+(replace:?sidebar)[(forget-undos:-1)](align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[Game Over]\
 (if: $Funds &lt; 0)+(if: $Time &lt; 45 )[Unfortunately, you do not have sufficient funds to complete your export. 
 (if:$Finance is &quot;NoFinance&quot;)[You did not choose any financing method.  It could be helpful if you have seeked out some trade financing methods.]\
 (if:$Finance is &quot;Prepay&quot;)[For financing method, you asked the customer to prepay.  It could be more helpful if you have seeked out some bank loan.]]\
@@ -2041,11 +2049,9 @@ $NextButtonFormat[Next Step ]
 (if: $Time &gt; 45 and $Funds &lt; 0)[Unfortunately, you ran out of money and time.(if:$Finance is &quot;NoFinance&quot;)[You did not choose any financing method. It would be helpful if you have seeked out some trade financing methods.]\
 (if:$Customs is &quot;Research&quot;)[ It would also be helpful if you have hired a customs broker or undertake training in processing custom procedures.]\
 (if: $Conveyance is &quot;Sea&quot;)[You chose the slowest conveyance method. Maybe secure more funds to choose a faster one.]]\
-(if:$Registration is &quot;NoRegistration&quot;)+(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[Sarvahara require a business to register before exporting food! ]\
+(if:$Registration is &quot;NoRegistration&quot;)+(if:$Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[Sarvahara require a business to register before exporting food! ]
 
-$NextButtonFormat[Restart](click:&quot;Restart&quot;)[(restart:)]
-[$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]
-</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
+$NextButtonFormat[Restart](click:&quot;Restart&quot;)[(restart:)] $NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)</tw-passagedata><tw-passagedata pid="21" name="HSCodeIntro" tags="2-Point-of-Export HSCode" position="1100,700" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 ---
@@ -2064,8 +2070,7 @@ $NextButtonFormat[Restart](click:&quot;Restart&quot;)[(restart:)]
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 6000, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]]\
-[
-As part of your export paperwork, you need to identify your product according to the Harmonized Commondity Description and Coding System (HS Code), an international product nomenclature developed by the World Customs Organization.
+[As part of your export paperwork, you need to identify your product according to the Harmonized Commondity Description and Coding System (HS Code), an international product nomenclature developed by the World Customs Organization.
 
 Do you know the HS Code for &#39;&#39;$Product&#39;&#39;? If not, click the link below to look it up.
 
@@ -2103,13 +2108,13 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $HS is &quot;HSfind&quot;)
-[$SelectButtonFormat[ &#39;&#39;HS Lookup&#39;&#39;  ]]
+[$SelectButtonFormat[ &#39;&#39;I need to look up my HS Code&#39;&#39;  ]]
 (else: )
 [(link:&quot;I need to look up my HS Code&quot;)[(set:$HS to &quot;HSfind&quot;)(rerun: ?passage)]]&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $HS is &quot;HSknow&quot;)
-[$SelectButtonFormat[ &#39;&#39; Know my HS&#39;&#39;  ]]
+[$SelectButtonFormat[ &#39;&#39; I already know my HS Code&#39;&#39;  ]]
 (else: )
 [(link: &quot;I already know my HS Code&quot;)[(set:$HS to &quot;HSknow&quot;)(rerun: ?passage)]]&lt;/td&gt;
     &lt;/tr&gt;
@@ -2136,7 +2141,7 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if:$Product is &quot;Knitted Hats&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your customers love the soft $SelectButtonFormat[cotton] quality of your product for their $SelectButtonFormat[babies].
 
 Once you have found the correct 6-digit HS code, make sure to write it down.&quot;)]
-(if:$Product is &quot;Wheat&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your country produces high quality durum wheat. The seeds are often exported to another country and processed after being sold.
+(if:$Product is &quot;Wheat&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your country produces high quality $SelectButtonFormat[durum wheat]. The $SelectButtonFormat[seeds] are often exported to another country and processed after being sold.
 
 Once you have found the correct 6-digit HS code, make sure to write it down.&quot;)]
 (if:$Product is &quot;Sports Footwear&quot;)[(alert:&quot;$SelectButtonFormat[Hint：]Your company exports $SelectButtonFormat[sports] footwear, such as $SelectButtonFormat[tennis shoes, basketball shoes, gym shoes, and training shoes].
@@ -2147,18 +2152,17 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 [$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;HSCodeVerification&#39;)]
 {
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="23" name="HSCodeSecondChance" tags="" position="1225,875" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="23" name="HSCodeSecondChance" tags="" position="1225,875" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;HSCodeSecondChance&#39;
   });
-&lt;/script&gt;
-(if:$Product is &quot;Cashew Nuts&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;080131&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
+&lt;/script&gt;}(if:$Product is &quot;Cashew Nuts&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;080131&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Yarn Woven Fabric&quot;)[(set: $Funds to ($Funds - 10))(alert:&quot;Your HS code is &#39;&#39;540832&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Rice&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is &#39;&#39;100630&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
 (if:$Product is &quot;Knitted Hats&quot;)[(set: $Funds to ($Funds - 50))(alert:&quot;Your HS code is  &#39;&#39;611120&#39;&#39;&quot;)(goto: &quot;HSCodeVerification&quot;)]
@@ -2191,18 +2195,17 @@ Once you have found the correct 6-digit HS code, make sure to write it down.&quo
 (if: $HSCode is _HScode or _HScode2)[(go-to:&quot;Correct&quot;)
 ]
 (else:)[(alert:&quot;That&#39;s not quite right. Please try again.&quot;)(set: $Time to ($Time +1))(set:$HSWrong to $HSWrong+1)(go-to:&quot;HSCodeIntro&quot;)]]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="25" name="Help Business Registration" tags="Help" position="550,850" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Business Registration&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Should I register my business?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Should I register my business?]\
 
 Ideas turn into businesses every day. Initially, many of these businesses are unregistered, meaning that they operate informally and therefore have not gained formal recognition from a government authority or internationally recognized organization. At some point, many businesses opt to seek formal registration as it provides comprehensive legal recognition and protection for your business.
 
@@ -2217,18 +2220,17 @@ Ideas turn into businesses every day. Initially, many of these businesses are un
 NOTE: If you are exporting to Sarvarhara, registration is a must!
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Business Registration&#39;)]</tw-passagedata><tw-passagedata pid="26" name="Help Conveyance" tags="Help" position="1225,1050" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Conveyance&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a shipping method?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to choose a shipping method?]\
 
 Choosing a shipping method for international trade involves considering several factors such as cost, speed, reliability, security, and the nature of the product.
 
@@ -2249,18 +2251,17 @@ Some common methods of transportation include sea freight, air freight, overland
 A good source to learn more about this topic is the &#39;&#39; &lt;a href=&quot;https://learning.intracen.org/course/info.php?id=277&quot; target=&quot;_blank&quot;&gt; ITC Introduction to International Transport and Logistics&lt;/a&gt;&#39;&#39;  online course. This course teaches users the basic transport and logistical requirements of export operations, including cross-border sea freight, air freight and packaging procedures.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Conveyance&#39;)]</tw-passagedata><tw-passagedata pid="27" name="Help Country Selection" tags="Help" position="550,100" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Country Selection&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I select a country to export from?]\
 You may consider some of the following factors when choosing your country of export:
 0. &#39;&#39;Geo-economic factors:&#39;&#39; Consider the location, level of development, and political aspects of the economy.
 0. &#39;&#39;Business environment: &#39;&#39;Evaluate the business environment of the country you are considering. Think about factors such as ease of doing business and legal frameworks.
@@ -2275,18 +2276,17 @@ You may consider some of the following factors when choosing your country of exp
 A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Play&#39;)]</tw-passagedata><tw-passagedata pid="28" name="Help Courier" tags="Help" position="1625,1075" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Courier&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I get my product from the port to my customer?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I get my product from the port to my customer?]\
 Once your goods have arrived in the destination country, you have a few options to get your goods the final mile to your customer. 
 
 If your goods are time-sensitive or require specialized handling, such as refrigeration or hazardous materials, then an international courier service may be a good, but expensive, option.
@@ -2294,18 +2294,17 @@ If your goods are time-sensitive or require specialized handling, such as refrig
 If your goods are not time-sensitive or require specialized handling, domestic courier services are usually more familiar with the local regulations and may be more adept at navigating the delivery in the destination country. Furthermore, domestic couriers tend to be more economical than their international counterparts.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Courier&#39;)]</tw-passagedata><tw-passagedata pid="29" name="Help Customs Option" tags="Help" position="550,550" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Customs Option&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How to prepare for custom and border procedures?]\
 
 &#39;&#39;Hire a customs broker :&#39;&#39; Customs brokers and clearing agents are specialists on customs rules and procedures. They can help ensure import documents are correct and may assist with forwarding arrangements.  In some economies, it is compulsory when an import value is above a certain threshold to use a licensed customs agent to clear goods through customs. In others, businesses simply choose to hire a customs broker to help avoid potentially costly errors. To find a licensed customs broker, start by searching the national customs agency where the import will take place, as they frequently list registered brokers that can be contacted.
 
@@ -2316,18 +2315,17 @@ If your goods are not time-sensitive or require specialized handling, domestic c
 &#39;&#39;Independent research :  &#39;&#39;To be successful in your export journey, it can be helpful to be familiar with customs authorities, enquiry points for relevant government agencies, and border procedures in the import and export locations. You may find many of these details online or available from other sources. A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Customs Option&#39;)]</tw-passagedata><tw-passagedata pid="30" name="Help Financial Instrument" tags="Help" position="1225,375" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Financial Instrument&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are financial instruments in international trade?]\
 
 &#39;&#39;Letter of credit (LC):&#39;&#39; LCs are commonly used in international trade to mitigate the risk of non-payment and ensure a smooth transaction between the buyer and the seller. This is a financial instrument issued by a bank at the request of the importer or buyer, promising to pay the exporter or seller an agreed amount of money once the seller has met their contractual obligations. The LC serves as a guarantee to the seller that they will be paid without risk of the buyer witholding payment. It also provides the buyer with some protection against the seller&#39;s failure to deliver the goods or meet the terms of the agreement.
 
@@ -2336,18 +2334,17 @@ If your goods are not time-sensitive or require specialized handling, domestic c
 &#39;&#39;Open account: &#39;&#39;This is a payment method where the buyer agrees to pay the seller after a set period of time, usually 30, 60, or 90 days after the goods have been shipped. Because of the risk of non-payment, this method is more common between established trading partners who have a good credit history with each other.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="31" name="Help Fundraising" tags="Help" position="1225,550" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="31" name="Help Fundraising" tags="Help" position="1225,550" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Fundraising&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How much extra financing do I need?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How much extra financing do I need?]\
 To determine how much extra financing you need, you should first create a budget that outlines all the costs associated with your international trade transaction, including production, transportation, insurance, and any customs or regulatory fees. It is important to consider any potential risks or unforeseen expenses that may arise during the transaction and factor those into your budget as well.
 
 A good source for real-life market information of this type is the &#39;&#39; &lt;a href=&quot;https://globaltradehelpdesk.org/en&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39;. If you are making use of an e-commerce platform, you may also use the &#39;&#39; &lt;a href=&quot;https://tools.ecomconnect.org/calculator/#/&quot; target=&quot;_blank&quot;&gt;e-commerce cost calculator&lt;/a&gt;&#39;&#39; to compare selling fees between platforms.
@@ -2367,52 +2364,49 @@ You may find that you need additional financing to complete your export. One opt
 You may find that you need additional financing to complete your export. If this is the case, you may consider asking your customer(s) to prepay for products. Prepayment provides a level of security to the exporter, as it ensures that they will receive payment for the goods before they are shipped. However, prepayment can also be a potential obstacle to securing sales, as customers may be reluctant to pay upfront before they have received the goods. It is important for exporters to weigh the risks and benefits of prepayment before deciding on this option.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Fundraising&#39;)]</tw-passagedata><tw-passagedata pid="32" name="Help HS Code" tags="Help" position="1225,750" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help HS Code&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is an HS code?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What is an HS code?]\
 The Harmonized Commodity Description and Coding System (HS) an international product nomenclature developed by the World Customs Organization. HS Codes are an internationally standardized system of names and numbers used by customs to classify traded products.  The system categorizes goods and commodities into a six-digit numerial system, grouping similiar products into chapters and headings. Countries are permitted to append additional digits to the first six digits for further classification.
 
 The &#39;&#39;&lt;a href=&quot;https://globaltradehelpdesk.org/en/resources/search-hs-code&quot; target=&quot;_blank&quot;&gt; Global Trade Helpdesk&lt;/a&gt;&#39;&#39; has developed a tool to assist you with finding the HS code(s) for your product(s).
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;HSCodeIntro&#39;)]</tw-passagedata><tw-passagedata pid="33" name="Help Insurance Cost" tags="Help" position="1225,1300" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Insurance Cost&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need insurance?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Why do I need insurance?]\
 You should consider any risks that you might face along your journey and determine whether you should purchase some form of trade-related insurance. 
 
 For this game, you must select simply whether to purchase a generic insurance or not, but in real life, some common types of trade-related insurance can be found on &#39;&#39; &lt;a href=&quot;https://trade4msmes.org/msme-resources/msmes-guides/trade-insurance/&quot; target=&quot;_blank&quot;&gt;Trade4MSMEs&lt;/a&gt;&#39;&#39;.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Insurance Choice&#39;)]</tw-passagedata><tw-passagedata pid="34" name="Help Market Selection" tags="Help" position="550,400" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Market Selection&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose a market to export to?]\
 To choose a market for your product, it&#39;s important to conduct market research and analysis. This can include gathering data on consumer preferences, market trends, and potential competitors. You can also consider hiring a local agent or distributor who can help you navigate the market and provide insights on cultural and regulatory differences.
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
@@ -2421,32 +2415,32 @@ In terms of regulations, it&#39;s important to research the specific regulations
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://m.macmap.org/&quot; target=&quot;_blank&quot;&gt;Market Access Map&lt;/a&gt;&#39;&#39; to identify customs tariffs, tariff rate quotas, trade remedies, regulatory requirements and preferential regimes applicable to your product.
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Now you may use the following link to know more about the market:]\
-(if:$Product is &quot;Cashew Nuts&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Kujuma_Cashew_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Sarvahara&lt;/a&gt;
-(text-style: &quot;underline&quot;)[Get to know Luminaria] (click: &quot;Get to know Luminaria&quot;)[There is an import prohibition of cashew nuts to Luminaria]]\
-(if:$Product is &quot;Yarn Woven Fabric&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Kujuma_Yarn_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Sarvahara&lt;/a&gt;
-&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Kujuma_Yarn_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Luminaria&lt;/a&gt;]\
-(if:$Product is &quot;Rice&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Sarvahara_Rice_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Kujuma&lt;/a&gt;
-&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Sarvahara_Rice_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Luminaria&lt;/a&gt;]\
-(if:$Product is &quot;Knitted Hats&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Sarvahara_Knitted-hats_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Kujuma&lt;/a&gt;
-&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Sarvahara_Knitted-hats_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Luminaria&lt;/a&gt;]\
-(if:$Product is &quot;Wheat&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Wheat_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Kujuma&lt;/a&gt;
-&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Wheat_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Sarvahara&lt;/a&gt;]\
-(if:$Product is &quot;Sports Footwear&quot;)[&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Kujuma&lt;/a&gt;
-&lt;a href=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Get to know Sarvahara&lt;/a&gt;]\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[To learn more about a specific market, click one of the links below:]\
+(if:$Product is &quot;Cashew Nuts&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Kujuma_Cashew_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Sarvahara&lt;/a&gt;
+(text-style: &quot;underline&quot;)[Exporting to Luminaria] (click: &quot;Exporting to Luminaria&quot;)[There is an import prohibition of cashew nuts from Kujuma to Luminaria]]
+(if:$Product is &quot;Yarn Woven Fabric&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Kujuma_Yarn_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Sarvahara&lt;/a&gt;
+&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Kujuma_Yarn_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Luminaria&lt;/a&gt;]\
+(if:$Product is &quot;Rice&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Sarvahara_Rice_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Kujuma&lt;/a&gt;
+&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Sarvahara_Rice_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Luminaria&lt;/a&gt;]\
+(if:$Product is &quot;Knitted Hats&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Sarvahara_Knitted-hats_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Kujuma&lt;/a&gt;
+&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Sarvahara_Knitted-hats_to-Luminaria.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Luminaria&lt;/a&gt;]\
+(if:$Product is &quot;Wheat&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Luminaria_Wheat_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Kujuma&lt;/a&gt;
+&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Luminaria_Wheat_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Sarvahara&lt;/a&gt;]\
+(if:$Product is &quot;Sports Footwear&quot;)[&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Kujuma.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Kujuma&lt;/a&gt;
+&lt;a href=&quot;https://trade4msmes.org/wp-content/uploads/2023/05/Luminaria_Sports-footwear_to-Sarvahara.pdf&quot; target=&quot;_blank&quot;&gt;Exporting to Sarvahara&lt;/a&gt;]\
+
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Market Selection&#39;)]</tw-passagedata><tw-passagedata pid="35" name="Help Marketing" tags="Help" position="550,1000" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Market Selection&#39;)]</tw-passagedata><tw-passagedata pid="35" name="Help Marketing" tags="Help" position="550,1000" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Marketing&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I market my product?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How should I market my product?]\
 Depending on what type of product you are selling and your potential customer type, you may opt for different marketing strategies. For example, if your product is consumer ready and you are selling directly to consumers, this is known as a Business-to-Consumer (B2C) transaction. If your product is an input to produce something else, you may be selling to another business. This is know as a Business-to-Business (B2B) transaction.  B2C sales often occur online and therefore you may opt for a digital marketing strategy to spread the word about your product. B2B sales are often initiated through referrals or as a result of an in-person interaction such as a trade fair.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Here are your options for your marketing strategy:]\
@@ -2457,18 +2451,17 @@ Depending on what type of product you are selling and your potential customer ty
 &#39;&#39;Business website:&#39;&#39; Having a website provides an online platform for businesses to showcase their products or services, communicate with customers, and establish their brand image. A well-designed and informative website can attract potential customers and provide them with important information such as product features, pricing, and shipping information.
 
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Marketing&#39;)]</tw-passagedata><tw-passagedata pid="36" name="Help Product Selection" tags="Help" position="550,250" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Product Selection&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose which product to export?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[How do I choose which product to export?]\
 The choice of the product to export depends on factors such as demand in international markets, production capacity, and regulatory requirements. It&#39;s important to conduct thorough market research and assess the competitiveness of a chosen product before embarking on an export venture.
 
 One tool you may use is the &#39;&#39; &lt;a href=&quot;https://exportpotential.intracen.org/en/&quot; target=&quot;_blank&quot;&gt;Export Potential Map&lt;/a&gt;&#39;&#39; to spot export potential opportunities.
@@ -2491,18 +2484,17 @@ If you are planning to export &#39;&#39;textile &amp; apparel products&#39;&#39;
 * &#39;&#39;Sarvahara&#39;&#39; is one of the largest rice exporters in the world, producing high-quality rice varieties such as white rice. Similarly, it is known for producing high-quality knitted baby hats due to its skilled workforce and favorable climate conditions for growing cotton.
 * &#39;&#39;Luminaria&#39;&#39; is a major wheat producer with a reputation for high-quality wheat that can be used for bread and pastry products. Additionally, Luminaria is well-known for its high-end sport shoes that are often associated with major international brands, making them attractive to customers in the international market who are willing to pay a premium price for quality footwear.
 [$NextButtonFormat[Back]
-(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(click-goto:&quot;Back&quot;, &#39;Product Selection&#39;)]</tw-passagedata><tw-passagedata pid="37" name="Help Voluntary Standards" tags="Help" position="550,700" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Help Voluntary Standards&#39;
   });
-&lt;/script&gt;
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary standards?]\
+&lt;/script&gt;}(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[What are voluntary standards?]\
 
 Voluntary sustainability standards (VSS) involve guidelines, rules and requirements aiming to foster sustainability along global value chains by ensuring businesses use resources and processes that do not damage the environment and people. Some examples may include organic, fair trade, or energy star.
 
@@ -2663,7 +2655,7 @@ th, td {
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;Insurance&quot;)
-[$SelectButtonFormat[&#39;&#39;Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Purchase insurance&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Purchase insurance&quot;)[(set:$Insurance to &quot;Insurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -2671,7 +2663,7 @@ th, td {
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;NoInsurance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Decline insurance&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Decline insurance&quot;)[(set:$Insurance to &quot;NoInsurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -2716,7 +2708,7 @@ th, td {
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;Insurance&quot;)
-[$SelectButtonFormat[&#39;&#39;Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Purchase insurance&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Purchase insurance&quot;)[(set:$Insurance to &quot;Insurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -2724,7 +2716,7 @@ th, td {
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;NoInsurance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Decline insurance&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Decline insurance&quot;)[(set:$Insurance to &quot;NoInsurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -2769,7 +2761,7 @@ th, td {
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;Insurance&quot;)
-[$SelectButtonFormat[&#39;&#39;Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Purchase insurance&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Purchase insurance&quot;)[(set:$Insurance to &quot;Insurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -2777,7 +2769,7 @@ th, td {
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Insurance is &quot;NoInsurance&quot;)
-[$SelectButtonFormat[&#39;&#39;No Insurance&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Decline insurance&#39;&#39;  ] ]
 (else: )
 [(link: &quot;Decline insurance&quot;)[(set:$Insurance to &quot;NoInsurance&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -2789,27 +2781,28 @@ th, td {
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Insurance Cost&#39;)]
 (if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Insurance Cost&#39;)]]}</tw-passagedata><tw-passagedata pid="42" name="Insurance Cost" tags="2-Point-of-Export" position="1000,1300" size="100,100">(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: $Funds to ($Funds - 20))(goto: &quot;Second Feedback&quot;)]
-(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: $Funds to ($Funds - 100))(goto: &quot;Second Feedback&quot;)]
-(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: $Funds to ($Funds - 1000))(goto: &quot;Second Feedback&quot;)]
+(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Insurance Cost&#39;)]]}</tw-passagedata><tw-passagedata pid="42" name="Insurance Cost" tags="2-Point-of-Export" position="1000,1300" size="100,100">(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: $Funds to ($Funds - 20))(goto: &quot;Ready to Import&quot;)]
+(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: $Funds to ($Funds - 100))(goto: &quot;Ready to Import&quot;)]
+(if:$Insurance is &quot;Insurance&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: $Funds to ($Funds - 1000))(goto: &quot;Ready to Import&quot;)]
 
-(if:$Insurance is  &quot;NoInsurance&quot;)[(goto: &quot;Second Feedback&quot;)]
+(if:$Insurance is  &quot;NoInsurance&quot;)[(goto: &quot;Ready to Import&quot;)]
 
 (if:$Insurance is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Insurance Choice&quot;)]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="43" name="Intro" tags="Intro/Outro" position="125,100" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="43" name="Intro" tags="Intro/Outro" position="150,100" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Intro&#39;
   });
-&lt;/script&gt;
+&lt;/script&gt;}
 {(set:$NextButtonFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(text-color:white)+(b4r:&quot;solid&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #00204a))
 (set:$SelectButtonFormat to (text-style: &quot;bold&quot;)+(text-color:#B30900))
-(set:$HelpFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(css:&quot;padding: 0.1em;&quot;)+(text-color:white)+(corner-radius:12)+(background: #B30900))}
+(set:$HelpFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(css:&quot;padding: 0.1em;&quot;)+(text-color:white)+(corner-radius:12)+(background: #B30900))
+(set:$FeedbackFormat to (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)+(css:&quot;padding: 0.1em;&quot;)+(text-color:white)+(corner-radius:12)+(background: #B30900))}
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)+(text-size:2)+(css:&quot;padding: 0.3em;&quot;)+(text-style:&quot;bold&quot;)[The Trade Game]\
 $NextButtonFormat[Start Now]\
 (click-goto:&quot;Start Now&quot;, &#39;Start&#39;)
@@ -2818,23 +2811,26 @@ $NextButtonFormat[Start Now]\
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[
 (text-color:white)[-]\
 &lt;a href=&quot;https://www.export.org.uk&quot; target=&quot;_blank&quot;&gt;
-&lt;img border=&quot;0&quot; alt=&quot;IOE&amp;IT&quot; src=&quot;https://cdn.ymaws.com/www.export.org.uk/graphics/logo.png&quot; width=&quot;250&quot; height=&quot;100&quot;&gt;]\
+&lt;img border=&quot;0&quot; alt=&quot;IOE&amp;IT&quot; src=&quot;https://cdn.ymaws.com/www.export.org.uk/graphics/logo.png&quot; width=&quot;200&quot; height=&quot;80&quot;&gt;]\
 ==|
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XX=&quot;)[&lt;/a&gt;&lt;a href=&quot;https://www.wto.org/english/tratop_e/msmes_e/msmes_e.htm&quot; target=&quot;_blank&quot;&gt;
-&lt;img border=&quot;0&quot; alt=&quot;WTO&quot; src=&quot;https://t4.sparkjoy.com/wp-content/uploads/2023/05/MSMEs_WTO_Logo_Vector_E-300x212-1-e1684265407153.png&quot; width=&quot;250&quot; height=&quot;180&quot;&gt;&lt;/a&gt;]</tw-passagedata><tw-passagedata pid="44" name="Mandatory Compliances" tags="2-Point-of-Export Compliance" position="1100,1175" size="100,100">{&lt;style&gt;
+&lt;img border=&quot;0&quot; alt=&quot;WTO&quot; src=&quot;https://trade4msmes.org/wp-content/uploads/2023/06/MSME-Group-Logo.png&quot; width=&quot;200&quot; height=&quot;144&quot;&gt;&lt;/a&gt;]</tw-passagedata><tw-passagedata pid="44" name="Mandatory Compliances" tags="2-Point-of-Export Compliance" position="1100,1175" size="100,100">{&lt;style&gt;
 input {
 display: none;
 }
 
 tr:has(
 input:checked) {
-background-color: #D6EEEE;
+background-color: #fcd777;
 width: 100%;
 }
 
 table {
-  width: 100%;
+  width: 40%;
 }
+table.center { margin-left: auto; 
+margin-right: auto;}
+
 td {
   text-align: center;
   border-bottom: 1px solid black;
@@ -3029,8 +3025,7 @@ The administrative fees to file these documents cost $250 which will be deducted
 (if:$DocWrong &gt; 2 )[(set: $DocReSelect to (confirm: &quot;Would you like to spend $100 to undertake training on learning mandatory compliances?&quot;, &quot;No&quot;, &quot;Yes&quot;))(if: $DocReSelect is true)[(set:$DocWrong to 0 )(go-to:&quot;Customs Procedures Notebook&quot;)]]
 The administrative fees to file these documents cost $2500 which will be deducted from your funds.]
 
-
-{&lt;table&gt;
+{&lt;table class=&quot;center&quot;&gt;
 &lt;tr&gt;
 &lt;td&gt;
 (checkbox: bind $SPS, &quot;Phytosanitary Certificate&quot;)
@@ -3088,7 +3083,7 @@ You must now demonstrate compliance with all required documents and procedures t
 
 Since you had some training on customs procedures previously,  you can use your notes to help. 
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #FFD700)[[Customs Procedures Notebook]] 
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X=&quot;)+(corner-radius:18)+(css:&quot;position: relative;&quot;)+(background: #fcd777)[[Customs Procedures Notebook]] 
 (if:$ExportCountry is &quot;Kujuma&quot;)[Please select all of the options applicable to your product. Be careful when answering. Each unsuccessful entry will cost you one day and $5!
 
 The administrative fees to file these documents cost $50 which will be deducted from your funds.]\
@@ -3099,8 +3094,7 @@ The administrative fees to file these documents cost $250 which will be deducted
 
 The administrative fees to file these documents cost $2500 which will be deducted from your funds.]\
 
-
-{&lt;table&gt;
+{&lt;table class=&quot;center&quot;&gt;
 &lt;tr&gt;
 &lt;td&gt;
 (checkbox: bind $SPS, &quot;Phytosanitary Certificate&quot;)
@@ -3339,7 +3333,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Import Prohibition&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Market Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="46" name="Marketing" tags="1-Export-Readiness Marketing" position="425,1000" size="100,100">(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[
+(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Market Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="46" name="Marketing" tags="1-Export-Readiness Marketing" position="400,1000" size="100,100">(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
@@ -3388,7 +3382,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;TPA&quot;)
-[$SelectButtonFormat[&#39;&#39;Trade Promotion Agency&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Contact your trade promotion agency&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Contact your trade promotion agency&quot;)[(set:$Marketing to &quot;TPA&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -3396,7 +3390,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;Website&quot;)
-[$SelectButtonFormat[&#39;&#39;Create Website&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Create your own website&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Create your own website&quot;)[(set:$Marketing to &quot;Website&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -3404,7 +3398,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;eCommerce&quot;)
-[$SelectButtonFormat[&#39;&#39;e-Commerce&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Join an eCommerce marketplace&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Join an eCommerce marketplace&quot;)[(set:$Marketing to &quot;eCommerce&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -3462,7 +3456,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;TPA&quot;)
-[$SelectButtonFormat[&#39;&#39;Trade Promotion Agency&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Contact your trade promotion agency&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Contact your trade promotion agency&quot;)[(set:$Marketing to &quot;TPA&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -3470,7 +3464,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;Website&quot;)
-[$SelectButtonFormat[&#39;&#39;Create Website&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Create your own website&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Create your own website&quot;)[(set:$Marketing to &quot;Website&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -3478,7 +3472,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;eCommerce&quot;)
-[$SelectButtonFormat[&#39;&#39;e-Commerce&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Join an eCommerce marketplace&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Join an eCommerce marketplace&quot;)[(set:$Marketing to &quot;eCommerce&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -3536,7 +3530,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;TPA&quot;)
-[$SelectButtonFormat[&#39;&#39;Trade Promotion Agency&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Contact your trade promotion agency&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Contact your trade promotion agency&quot;)[(set:$Marketing to &quot;TPA&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -3544,7 +3538,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;Website&quot;)
-[$SelectButtonFormat[&#39;&#39;Create Website&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Create your own website&#39;&#39;  ] ]
 (else: )
 [(link:  &quot;Create your own website&quot;)[(set:$Marketing to &quot;Website&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -3552,7 +3546,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Marketing is &quot;eCommerce&quot;)
-[$SelectButtonFormat[&#39;&#39;e-Commerce&#39;&#39;  ] ]
+[$SelectButtonFormat[&#39;&#39;Join an eCommerce marketplace&#39;&#39;  ] ]
 (else: )
 [(link:&quot;Join an eCommerce marketplace&quot;)[(set:$Marketing to &quot;eCommerce&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -3564,23 +3558,23 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Marketing Cost&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Marketing&#39;)]]}</tw-passagedata><tw-passagedata pid="47" name="Marketing Cost" tags="1-Export-Readiness" position="300,1000" size="100,100">(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;First Feedback&quot;)]
+(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Marketing&#39;)]]}</tw-passagedata><tw-passagedata pid="47" name="Marketing Cost" tags="1-Export-Readiness" position="300,1000" size="100,100">(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;TPA&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost1))(set: $Funds to ($Funds - _Cost1))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;Website&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost2))(set: $Funds to ($Funds - _Cost2))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Kujuma&quot;)[(set: num-type _Cost1 to 3)(set:num-type _Cost2 to 1)(set:num-type _Cost3 to 4)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Sarvahara&quot;)[(set: num-type _Cost1 to 11)(set:num-type _Cost2 to 11)(set:num-type _Cost3 to 16)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Ready to Export&quot;)]
 
-(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;First Feedback&quot;)]
+(if:$Marketing is &quot;eCommerce&quot;)+(if:$ExportCountry is &quot;Luminaria&quot;)[(set: num-type _Cost1 to 95)(set:num-type _Cost2 to 95)(set:num-type _Cost3 to 149)(set:num-type _TimeCost1 to 1)(set:num-type _TimeCost2 to 3)(set:num-type _TimeCost3 to 0)(set: $Time to ($Time+ _TimeCost3))(set: $Funds to ($Funds - _Cost3))(goto: &quot;Ready to Export&quot;)]
 
 (if:$Marketing is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Marketing&quot;)]</tw-passagedata><tw-passagedata pid="48" name="Play" tags="Intro/Outro" position="400,100" size="100,100">Welcome to the Trade Game!
 
@@ -3658,19 +3652,17 @@ tbody tr:hover {background-color: #D6EEEE;}
 
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Product Selection&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Country Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="49" name="Point Converter" tags="Summary" position="1500,1450" size="100,100">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-ETXC5JLF11&quot;&gt;&lt;/script&gt;
+(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Country Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="49" name="Point Converter" tags="Summary" position="1500,1450" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag(&#39;js&#39;, new Date());
-
-  gtag(&#39;config&#39;, &#39;G-WB6VHFDE60&#39;);
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
   gtag(&#39;event&#39;, &#39;Passage View&#39;, {
     &#39;event_category&#39;: &#39;Point Converter&#39;
   });
-&lt;/script&gt;
-{(set: num-type $point to 0 )[
+&lt;/script&gt;}{(set: num-type $point to 0 )[
 (if: $Customs is &quot;Training&quot;) [(set: $point to $point + 3 )]
 (if: $Customs is &quot;Broker&quot;) [(set: $point to $point + 2 )]
 (if: $Customs is &quot;Research&quot;)  [(set: $point to $point + 3 )]
@@ -3714,12 +3706,13 @@ tbody tr:hover {background-color: #D6EEEE;}
 ---
 &#39;&#39;Funds:(border:&#39;solid&#39;)(meter: bind $Funds, 6000, &quot;X&quot;, &quot;$Funds&quot;, (gradient: 0, 0,  red, 0.25, yellow, 0.5, green ))&#39;&#39;
 &#39;&#39;Time:(border:&#39;solid&#39;)(meter: bind $Time, 45, &quot;X&quot;, &quot;$Time&quot;, (gradient: 0, 0, blue , 0.5, cyan, 0.75, yellow, 1, red))&#39;&#39;]]]\
-#(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Congratulations!]
-(if: $point is 12 or 13 or 14)[Your score is in the lower 25% based on the choices you made.]\
-(if: $point is 15 or 16 or 17)[Your score is in the lower 50% based on the choices you made.]\
-(if: $point is 18 or 19 or 20)[Your score is in the top 50% based on the choices you made.]\
-(if: $point is 21 or 22 or 23)[Your score is in the top 25% based on the choices you made.]\
-(if: $point is 24)[Your have a perfect score based on the choices you made!]\
+#(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Congratulations!]\
+
+###(if: $point is 12 or 13 or 14)[Your score is in the lower 25% based on the choices you made.]\
+###(if: $point is 15 or 16 or 17)[Your score is in the lower 50% based on the choices you made.]\
+###(if: $point is 18 or 19 or 20)[Your score is in the top 50% based on the choices you made.]\
+###(if: $point is 21 or 22 or 23)[Your score is in the top 25% based on the choices you made.]\
+###(if: $point is 24)[Your have a perfect score based on the choices you made!]\
 
 
 [$NextButtonFormat[End Game](click-goto:&quot;End Game&quot;, &#39;Feedback&#39;)]</tw-passagedata><tw-passagedata pid="50" name="Product Selection" tags="Intro/Outro" position="400,250" size="100,100">{(if:$ExportCountry is 0)[(alert:&quot;Please choose an answer before continuing to the next question.&quot;)(goto: &quot;Play&quot;)]}
@@ -3806,8 +3799,10 @@ tbody tr:hover {background-color: #D6EEEE;}
 (click-goto:&quot;Next Step&quot;, &#39;Market Selection&#39;)]
 (box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Product Selection&#39;)]]}</tw-passagedata><tw-passagedata pid="51" name="Quarantine" tags="" position="1625,800" size="100,100">(if: $Product is $StoredFoodProduct and $ImportCountry is &quot;Sarvahara&quot;)[(alert:&quot;Besides the mandatory inspection, Sarvahara also has a strict quarantine policy for importing food product, which takes another 7 days.&quot;)(set: $Time to ($Time + 7))(goto: &quot;Duty and tax assessment&quot;)]
 
-(if: $Product is not $StoredFoodProduct or $ImportCountry is not &quot;Sarvahara&quot;)[(goto: &quot;Duty and tax assessment&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Ready to Export" tags="2-Point-of-Export Intro/Outro" position="1100,250" size="100,100">{(if:$Time is not 0)[All your pre-export preparations are complete. In- total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]
-(if:$Time is 0)[All your pre-export preparations are complete. Your export readiness activities did not take any time.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]}
+(if: $Product is not $StoredFoodProduct or $ImportCountry is not &quot;Sarvahara&quot;)[(goto: &quot;Duty and tax assessment&quot;)]</tw-passagedata><tw-passagedata pid="52" name="Ready to Export" tags="2-Point-of-Export Intro/Outro" position="1100,250" size="100,100">(if:$Time is not 0)[
+All your pre-export preparations are complete. In total, your export readiness activities took $Time days.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]\
+(if:$Time is 0)[
+All your pre-export preparations are complete. Your export readiness activities did not take any time.  Make sure to watch your time as you continue to ensure you are able to deliver your product to your customer as quickly as possible. Here is some feedback on your responses thus far.]\
 (if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
@@ -3832,30 +3827,25 @@ tbody tr:hover {background-color: #D6EEEE;}
 (if: $ExportCountry is &quot;Luminaria&quot;)[(set: $Revenue to 5500 )]
 (if: $ExportCountry is &quot;Sarvahara&quot; and $ImportCountry is &quot;Kujuma&quot;)[(set: $Revenue to 550 )]
 (if: $ExportCountry is &quot;Sarvahara&quot; and $ImportCountry is &quot;Luminaria&quot;)[(set: $Revenue to 5500 )]}
-
 (if:$Marketing is not &quot;eCommerce&quot; and $Standards is not &quot;Implement&quot;)[(if:$Marketing is &quot;TPA&quot;)[(set: $timefindcustomer to 2 )]\
 (if:$Marketing is &quot;Website&quot;)[(set:$timefindcustomer to 4 )]\
-{(set:$Time to it + $timefindcustomer)}
-
-All your hard work has paid off! After marketing for $timefindcustomer days, you found a buyer in $ImportCountry who is interested in your product. The customer will pay you $$Revenue upon successful delivery.
+{(set:$Time to it + $timefindcustomer)}After marketing for $timefindcustomer days, you found a buyer in $ImportCountry who is interested in your product. The customer will pay you $$Revenue upon successful delivery.
 
 You are on track to meet your target of completing your first export within 45 days and have (print:45-$Time) days remaining to deliver your product to your customer.]\
 (if:$Marketing is &quot;eCommerce&quot; and $Standards is not &quot;Implement&quot;)[(set: _eCommercebonus to (Random:10, 50))(set: $Revenue to (round:$Revenue+$Revenue*_eCommercebonus/100)) (set: $timefindcustomer to 4 )\
 {(set:$Time to it + $timefindcustomer)}
-All your hard work has paid off! You made a smart choice to market your $Product on an eCommerce platform. Because of the extra exposure from the platform, after $timefindcustomer days you found two buyers in $ImportCountry who are interested in your product. This will increase your revenue by  _eCommercebonus%.  The customer will pay you $$Revenue upon successful delivery. 
+You made a smart choice to market your $Product on an eCommerce platform. Because of the extra exposure from the platform, after $timefindcustomer days you found two buyers in $ImportCountry who are interested in your product. This will increase your revenue by  _eCommercebonus%.  The customer will pay you $$Revenue upon successful delivery. 
 
 You are on track to meet your target of completing your first export within 45 days and have (print:45-$Time) days remaining to deliver your product to your customer.]\
 (if:$Marketing is not &quot;eCommerce&quot; and $Standards is &quot;Implement&quot;)[(set: _VSSbonus to 10)(set: $Revenue to $Revenue+$Revenue*_VSSbonus/100)(if:$Marketing is &quot;TPA&quot;)[(set: $timefindcustomer to 2 )]\
 (if:$Marketing is &quot;Website&quot;)[(set: $timefindcustomer to 4 )]\
-{(set:$Time to it + $timefindcustomer)}
-All your hard work has paid off! You made a smart choice to implement a voluntary standard on your $Product. This will increase the value of your $Product by 10%. 
+{(set:$Time to it + $timefindcustomer)}You made a smart choice to implement a voluntary standard on your $Product. This will increase the value of your $Product by 10%. 
 
 After marketing for $timefindcustomer days, you found a buyer in $ImportCountry who is interested in your product. The customer will pay you $$Revenue upon successful delivery. 
 
 You are on track to meet your target of completing your first export within 45 days and have (print:45-$Time) days remaining to deliver your product to your customer.]\
 (if:$Marketing is &quot;eCommerce&quot; and $Standards is &quot;Implement&quot;)[(set: _eCommercebonus to (Random:10, 50))(set: _VSSbonus to 10)(set: $Revenue to (round:$Revenue+$Revenue*_eCommercebonus/100+$Revenue*_VSSbonus/100) )(set: $timefindcustomer to 4 )\
-{(set:$Time to it + $timefindcustomer)}
-All your hard work has paid off! You made a smart choice to market your $Product on an eCommerce platform and implement a voluntary standard. 
+{(set:$Time to it + $timefindcustomer)}You made a smart choice to market your $Product on an eCommerce platform and implement a voluntary standard. 
 
 Because of the extra exposure from the platform, after $timefindcustomer days you found two buyers in $ImportCountry who are interested in your product.
 
@@ -3881,8 +3871,9 @@ Note: Kujuma assesses 15% VAT on imports at the point of entry into Kujuma. Make
 Now it&#39;s time to begin exporting.
 
 
-[$NextButtonFormat[Next Step]
-(click-goto:&quot;Next Step&quot;, &#39;Financial Instrument&#39;)]</tw-passagedata><tw-passagedata pid="53" name="Ready to Import" tags="3-Point-of-Import Quarantine" position="1500,400" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[
+{[$NextButtonFormat[Next Step]
+(click-goto:&quot;Next Step&quot;, &#39;Financial Instrument&#39;)]
+(box:&quot;====X&quot;)[$FeedbackFormat[Feedback(click-goto:&quot;Feedback&quot;, &#39;First Feedback&#39;)]]}</tw-passagedata><tw-passagedata pid="53" name="Ready to Import" tags="3-Point-of-Import Quarantine" position="1500,400" size="100,100">(if:$ExportCountry is &quot;Kujuma&quot;)[
 (append: ?SideBar)[
 (align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product
@@ -3910,9 +3901,10 @@ Now it&#39;s time to begin exporting.
 Your product has successfully left $ExportCountry and is now in transit to $ImportCountry!}
 
 
-[$NextButtonFormat[Next Step]
+{[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Customs Declaration&#39;)]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="54" name="Revenue" tags="Summary" position="1500,1200" size="100,100">{(if:$LoanDisbursement is 0)[(goto: &quot;Summary&quot;)]
+(box:&quot;====X&quot;)[$FeedbackFormat[Feedback(click-goto:&quot;Feedback&quot;, &#39;Second Feedback&#39;)]]
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="54" name="Revenue" tags="Summary" position="1500,1200" size="100,100">{(if:$LoanDisbursement is 0)[(goto: &quot;Summary&quot;)]
 (if:$PrepayDisbursement is 0)[(goto: &quot;Summary&quot;)]
 (if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}
 (if:$ExportCountry is &quot;Kujuma&quot;)[(append: ?SideBar)[(align:&quot;&lt;==&quot;)+(box:&quot;X&quot;)+(corner-radius:12)+(background:white)+(opacity:0.9)[&#39;&#39;Export Market:&#39;&#39; $ExportCountry
@@ -3949,7 +3941,17 @@ Now that you have received payment from your customer, you need to repay your lo
 (if:$Finance is &quot;Prepay&quot; )[You delivered the product to your customer and the customer paid you all of the remaining amount of  $(print:$Revenue - $PrepayDisbursement).]\
 {[$NextButtonFormat[Next Step]
 (click-goto:&quot;Next Step&quot;, &#39;Summary&#39;)]}
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="55" name="Second Feedback" tags="Help" position="1100,1425" size="100,100">Your product is about to leave $ExportCountry to be sent to $ImportCountry! Here is some feedback on your responses so far.
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]</tw-passagedata><tw-passagedata pid="55" name="Second Feedback" tags="Help" position="1400,400" size="100,100">{&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-R3CFCYMQD8&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;G-R3CFCYMQD8&#39;);
+  gtag(&#39;event&#39;, &#39;Passage View&#39;, {
+    &#39;event_category&#39;: &#39;Second Feedback&#39;
+  });
+&lt;/script&gt;}Your product is about to leave $ExportCountry to be sent to $ImportCountry! Here is some feedback on your responses so far.
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXX==&quot;)+(text-style:&quot;bold&quot;)[Financial Instrument]\
 For the financial instrument option, you selected: (if:$Contract is &quot;Letter&quot;)[(text-colour:red)[&#39;&#39;Letter of credit.&#39;&#39;]
@@ -3994,10 +3996,9 @@ For the insurance option, you selected: (if:$Insurance is &quot;Insurance&quot;)
 
 Buying insurance can be very helpful to protect you since there there are many unknowns throughout the trade journey which may incur unforeseen costs.
 
-{[$NextButtonFormat[Next Step]
-(click-goto:&quot;Next Step&quot;, &#39;Ready to Import&#39;)]
-(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]
-(box:&quot;====X&quot;)[$HelpFormat[Help(click-goto:&quot;Help&quot;, &#39;Help Insurance Cost&#39;)]]}</tw-passagedata><tw-passagedata pid="56" name="Start" tags="Intro/Outro" position="275,100" size="100,100">###[Goal]
+{[$NextButtonFormat[Back]
+(click-goto:&quot;Back&quot;, &#39;Ready to Import&#39;)]
+(if: $Time &gt; 45 or $Funds &lt; 0)[(goto:&#39;Game Over&#39;)]}</tw-passagedata><tw-passagedata pid="56" name="Start" tags="Intro/Outro" position="275,100" size="100,100">###[Goal]
 			Can you navigate the complexities of international trade to successfully export a product on time and within budget?
 
 
@@ -4035,25 +4036,25 @@ Click the button below to learn firsthand about this process and start your expo
 
 You successfully completed your export. Let&#39;s review your journey.
  (if:$Finance is &quot;Loan&quot;)[(set:$FinalRevenue to $Funds+$Revenue-$LoanRepayment)
- &#39;&#39;Export Market: &#39;&#39;$ExportCountry
+ &#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product 
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 &#39;&#39;Time Spent:&#39;&#39; $Time days
-&#39;&#39;Final Revenue:&#39;&#39;$$FinalRevenue
+&#39;&#39;Final Revenue:&#39;&#39; $$FinalRevenue
 ]\
  (if:$Finance is &quot;Prepay&quot;)[(set:$FinalRevenue to $Funds+$Revenue- $PrepayDisbursement)
-  &#39;&#39;Export Market: &#39;&#39;$ExportCountry
+  &#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product 
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 &#39;&#39;Time Spent:&#39;&#39; $Time days
-&#39;&#39;Final Revenue:&#39;&#39;$$FinalRevenue
+&#39;&#39;Final Revenue:&#39;&#39; $$FinalRevenue
 ]\
  (if:$Finance is &quot;NoFinance&quot;)[(set:$FinalRevenue to $Funds+$Revenue)
-  &#39;&#39;Export Market: &#39;&#39;$ExportCountry
+  &#39;&#39;Export Market:&#39;&#39; $ExportCountry
 &#39;&#39;Product:&#39;&#39; $Product 
 &#39;&#39;Import Market:&#39;&#39; $ImportCountry
 &#39;&#39;Time Spent:&#39;&#39; $Time days
-&#39;&#39;Final Revenue:&#39;&#39;$$FinalRevenue
+&#39;&#39;Final Revenue:&#39;&#39; $$FinalRevenue
 ]\
 (if:$Standards is &quot;Packaging&quot;)+(if:$ImportCountry is &quot;Luminaria&quot;)[
 In  the meantime, customers in $ImportCountry really appreciate the sustainable approach to packaging. They leave a good review and reward you with $100 to thank you for saving the planet.(set:$FinalRevenue to $FinalRevenue+100)]\
@@ -4133,7 +4134,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Implement&quot;)
-[$SelectButtonFormat[&#39;&#39;Voluntary sustainability standards&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Research and implement voluntary standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Research and implement voluntary standards&quot;)[(set: $Standards to &quot;Implement&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -4141,7 +4142,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Packaging&quot;)
-[$SelectButtonFormat[&#39;&#39;Packaging&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Package your product in 100% recycled materials&#39;&#39;  ]]
 (else: )
 [(link: &quot;Package your product in 100% recycled materials&quot;)[(set: $Standards to &quot;Packaging&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -4149,7 +4150,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;NoStandard&quot;)
-[$SelectButtonFormat[&#39;&#39;No Standard&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Proceed without any voluntary standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Proceed without any voluntary standards&quot;)[(set: $Standards to &quot;NoStandard&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -4213,7 +4214,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Packaging&quot;)
-[$SelectButtonFormat[&#39;&#39;Packaging&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Package your product in 100% recycled materials&#39;&#39;  ]]
 (else: )
 [(link: &quot;Package your product in 100% recycled materials&quot;)[(set: $Standards to &quot;Packaging&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -4221,7 +4222,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;NoStandard&quot;)
-[$SelectButtonFormat[&#39;&#39;No Standard&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Proceed without any voluntary standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Proceed without any voluntary standards&quot;)[(set: $Standards to &quot;NoStandard&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
@@ -4277,7 +4278,7 @@ tbody tr:hover {background-color: #D6EEEE;}
 &lt;tbody&gt;    
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Implement&quot;)
-[$SelectButtonFormat[&#39;&#39;Voluntary sustainability standards&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Research and implement voluntary standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Research and implement voluntary standards&quot;)[(set: $Standards to &quot;Implement&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost1&lt;/td&gt;
@@ -4285,7 +4286,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
     &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;Packaging&quot;)
-[$SelectButtonFormat[&#39;&#39;Packaging&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Package your product in 100% recycled materials&#39;&#39;  ]]
 (else: )
 [(link: &quot;Package your product in 100% recycled materials&quot;)[(set: $Standards to &quot;Packaging&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost2&lt;/td&gt;
@@ -4293,7 +4294,7 @@ tbody tr:hover {background-color: #D6EEEE;}
     &lt;/tr&gt;
       &lt;tr&gt;
     	&lt;td&gt;(if: $Standards is &quot;NoStandard&quot;)
-[$SelectButtonFormat[&#39;&#39;No Standard&#39;&#39;  ]]
+[$SelectButtonFormat[&#39;&#39;Proceed without any voluntary standards&#39;&#39;  ]]
 (else: )
 [(link: &quot;Proceed without any voluntary standards&quot;)[(set: $Standards to &quot;NoStandard&quot;)(rerun: ?passage)]]&lt;/td&gt;
         &lt;td&gt;_Cost3&lt;/td&gt;
